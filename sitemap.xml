@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://preserver.me/</loc><lastmod>2026-06-12</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://preserver.me/uses/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://preserver.me/faq/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://preserver.me/blog/</loc><lastmod>2026-06-12</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://preserver.me/blog/gps-metadata/</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://preserver.me/blog/tradies/</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://preserver.me/blog/ad-funded/</loc><lastmod>2026-05-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://preserver.me/blog/offline-field/</loc><lastmod>2026-04-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://preserver.me/blog/voice-vs-text/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://preserver.me/contactus/</loc><lastmod>2026-06-12</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://preserver.me/legals/</loc><lastmod>2026-06-12</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://preserver.me/legals/privacy/</loc><lastmod>2026-06-12</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://preserver.me/legals/terms/</loc><lastmod>2026-06-12</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://preserver.me/legals/cookies/</loc><lastmod>2026-06-12</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://preserver.me/legals/eula/</loc><lastmod>2026-06-12</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://preserver.me/legals/disclaimer/</loc><lastmod>2026-06-12</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://preserver.me/llms.txt</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://preserver.me/llms-full.txt</loc><lastmod>2026-06-12</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://preserver.me/BingSiteAuth.xml</loc><lastmod>2026-06-12</lastmod><changefreq>yearly</changefreq><priority>0.1</priority></url>
+</urlset>

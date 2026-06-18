@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /assets/build.sh
+
+Sitemap: https://preserver.me/sitemap.xml
+LLMs: https://preserver.me/llms.txt
+LLMs-Full: https://preserver.me/llms-full.txt

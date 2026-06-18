@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="msvalidate.01" content="DC85CCEB1CF6D6069F2EE2599AF7D6A9">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://agents.dante-ai.com">
+  <link rel="dns-prefetch" href="https://formsubmit.co">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Use Cases — Preserver</title>
+  <!-- SEO -->
+  <meta name="description" content="Preserver is used across 70+ industries — from tradies and healthcare workers to researchers and families. Timestamped GPS capture for everyone.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://preserver.me/uses/">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Use Cases — Preserver">
+  <meta property="og:description" content="Preserver is used across 70+ industries — from tradies and healthcare workers to researchers and families. Timestamped GPS capture for everyone.">
+  <meta property="og:url" content="https://preserver.me/uses/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Preserver">
+  <meta property="og:image" content="https://preserver.me/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Preserver life ring logo">
+  <meta property="og:locale" content="en_AU">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@Preserver_app">
+  <meta name="twitter:title" content="Use Cases — Preserver">
+  <meta name="twitter:description" content="Preserver is used across 70+ industries — from tradies and healthcare workers to researchers and families. Timestamped GPS capture for everyone.">
+  <meta name="twitter:image" content="https://preserver.me/assets/og-image.png">
+  <link rel="icon" href="https://preserver.me/wp-content/uploads/2024/01/cropped-icon-32x32.png" sizes="32x32">
+  <link rel="stylesheet" href="/assets/style.css">
+  <style>
+    .uses-category { margin-bottom: 60px; }
+    .uses-category h2 { font-size: 20px; font-weight: 700; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #f0f0f0; display: flex; align-items: center; gap: 10px; }
+    .uses-category h2 span { color: #FF4500; }
+    .use-card { cursor: pointer; text-align: left; position: relative; }
+    .use-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+    .use-card .read-more { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 700; color: #FF4500; margin-top: 8px; }
+    .use-card .read-more::after { content: '→'; }
+    /* Modal */
+    .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.5); z-index: 1000; align-items: center; justify-content: center; padding: 20px; }
+    .modal-overlay.active { display: flex; }
+    .modal-box { background: #fff; border-radius: 16px; width: 100%; max-width: 540px; max-height: 90vh; overflow-y: auto; box-shadow: 0 24px 64px rgba(0,0,0,.2); }
+    .modal-head { background: #fff3f0; border-bottom: 1px solid #ffe8e0; padding: 20px 24px; display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; position: sticky; top: 0; border-radius: 16px 16px 0 0; }
+    .modal-head-left { display: flex; align-items: center; gap: 14px; }
+    .modal-big-icon { font-size: 40px; }
+    .modal-title { font-size: 20px; font-weight: 800; color: #1a1a1a; margin: 0 0 4px; }
+    .modal-cat { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: #FF4500; background: #fff; border: 1px solid #FF4500; border-radius: 99px; padding: 2px 10px; display: inline-block; }
+    .modal-close { background: none; border: none; font-size: 24px; cursor: pointer; color: #888; line-height: 1; padding: 4px; flex-shrink: 0; }
+    .modal-close:hover { color: #1a1a1a; }
+    .modal-body { padding: 24px; }
+    .modal-body > p { font-size: 15px; color: #555; line-height: 1.75; margin-bottom: 20px; }
+    .modal-body h4 { font-size: 14px; font-weight: 700; color: #1a1a1a; margin: 0 0 12px; }
+    .modal-points { list-style: none; padding: 0; margin: 0 0 20px; }
+    .modal-points li { font-size: 14px; color: #555; padding: 8px 0; border-bottom: 1px solid #f0f0f0; display: flex; align-items: flex-start; gap: 10px; line-height: 1.5; }
+    .modal-points li:last-child { border: none; }
+    .modal-points li::before { content: '✓'; color: #FF4500; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+    .modal-video { width: 100%; aspect-ratio: 1/1; border-radius: 10px; margin-bottom: 16px; background: #111; display: block; }
+    .modal-pdf-row { display: flex; margin-bottom: 20px; }
+    .modal-pdf-row a { flex: 1; text-align: center; font-size: 13px; font-weight: 600; padding: 10px; border-radius: 10px; border: 1.5px solid #e8e8e8; color: #1a1a1a; text-decoration: none; transition: background .15s; }
+    .modal-pdf-row a:hover { background: #f8f8f8; }
+    .modal-blog { background: #f8f8f8; border-radius: 10px; padding: 14px 16px; display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 20px; }
+    .modal-blog span { font-size: 13px; color: #1a1a1a; font-weight: 600; }
+    .modal-blog a { font-size: 13px; font-weight: 700; color: #FF4500; text-decoration: none; white-space: nowrap; }
+    .modal-blog a:hover { text-decoration: underline; }
+    .modal-cta { display: flex; gap: 10px; }
+    .modal-cta a { flex: 1; text-align: center; font-size: 13px; font-weight: 600; padding: 10px; border-radius: 10px; border: 1.5px solid #e8e8e8; color: #1a1a1a; text-decoration: none; transition: background .15s; }
+    .modal-cta a:hover { background: #f8f8f8; }
+    .modal-cta a.primary { background: #FF4500; color: #fff; border-color: #FF4500; }
+    .modal-cta a.primary:hover { background: #e03d00; }
+  </style>
+  <script src="https://agents.dante-ai.com/embed.js" data-agent-id="c7e8d438-30a2-4b90-843b-215736b6c8c7" data-widget-key="wk_z4QNp_ZvzXqX-scD9pd0nY_9AZ2yq9Ao" crossorigin="anonymous" async></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://preserver.me/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Use Cases",
+      "item": "https://preserver.me/uses/"
+    }
+  ]
+}
+</script>
+  <link rel="alternate" hreflang="en-AU" href="https://preserver.me/uses/">
+  <link rel="alternate" hreflang="en" href="https://preserver.me/uses/">
+</head>
+<body>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-text">
+  <div class="modal-box">
+    <div class="modal-head">
+      <div class="modal-head-left">
+        <span class="modal-big-icon" id="modal-icon"></span>
+        <div>
+          <p class="modal-title" id="modal-title-text"></p>
+          <span class="modal-cat" id="modal-cat"></span>
+        </div>
+      </div>
+      <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <p id="modal-desc"></p>
+      <h4>How Preserver helps:</h4>
+      <ul class="modal-points" id="modal-points"></ul>
+      <video class="modal-video" id="modal-video" controls preload="none" playsinline></video>
+      <div class="modal-pdf-row">
+        <a id="modal-pdf-link" href="#" download>⬇ Download one-pager (PDF)</a>
+      </div>
+      <div class="modal-blog" id="modal-blog" style="display:none">
+        <span>📖 Full article on this use case</span>
+        <a id="modal-blog-link" href="#">Read article →</a>
+      </div>
+      <div class="modal-cta">
+        <a href="https://apps.apple.com/au/app/preserver/id6443649784" target="_blank" rel="noopener">App Store</a>
+        <a href="https://play.google.com/store/apps/details?id=au.com.observerapp.observer" target="_blank" rel="noopener">Google Play</a>
+        <a href="/#download" class="primary">Get Preserver — $49</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="section__eyebrow">Use cases</div>
+      <h1>Who Uses <span style="color:#FF4500">Preserver?</span></h1>
+      <p>From tradies to researchers, journalists to families — anyone who needs to capture what happened, exactly when and where it happened.</p>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+
+      <div class="uses-category">
+        <h2>🏥 Health &amp; <span>Care</span></h2>
+        <div class="use-grid">
+          <div class="use-card" onclick="openModal('Aged Care','🏥','Health &amp; Care','Timestamped incident records protect both residents and carers. When every note is automatically stamped with time, date and GPS, care staff have irrefutable records that support quality audits, safeguarding investigations and insurance claims.','Incident notes with exact time and location|Medication administration logs|Resident activity and wellbeing records|GPS-verified home visit proof of attendance|Photographic evidence for wound care and condition monitoring','','')">
+            <div class="icon">🏥</div><h3>Aged Care</h3><p>Timestamped incident notes, medication logs and resident activity records.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Allied Health','🩺','Health &amp; Care','Allied health professionals conducting home visits need proof of attendance and a record of what occurred. Preserver provides GPS-verified visit logs with automatic timestamps — no signal needed in the field.','GPS-verified home visit proof of attendance|Session notes with automatic timestamps|Patient progress records over time|Voice notes for hands-free documentation during visits|Incident documentation with location evidence','','')">
+            <div class="icon">🩺</div><h3>Allied Health</h3><p>Patient visit notes with GPS verification for home visits.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Childcare Workers','👶','Health &amp; Care','Childcare documentation is both a legal requirement and a safeguarding tool. Preserver lets workers log observations, incidents and daily activities with automatic timestamps — private and offline-first.','Daily activity and wellbeing observations|Incident reports with time, date and location|Medication administration records|Developmental milestone notes|Parent communication records','','')">
+            <div class="icon">👶</div><h3>Childcare Workers</h3><p>Activity logs, incident reports and daily observations with timestamps.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Chiropractors','🦴','Health &amp; Care','Clinical session notes need to be accurate, private and easily retrievable. Preserver provides a private voice and text capture tool that works offline, with no cloud upload unless you choose.','Session notes and treatment observations|Patient progress records over multiple visits|Voice notes during consultations|Referral and correspondence records|Private — data stays on device','','')">
+            <div class="icon">🦴</div><h3>Chiropractors</h3><p>Session notes, treatment observations and patient progress records.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Counsellors','🧠','Health &amp; Care','Counsellor notes are sensitive and must stay private. Preserver stores everything on your device — nothing goes to any cloud unless you actively choose to export. Private — data stays on your device.','Session summaries and clinical observations|Risk assessment notes|Client progress tracking over time|Completely private — no server upload|Works offline in any setting','','')">
+            <div class="icon">🧠</div><h3>Counsellors</h3><p>Session summaries and clinical observations — private, offline-first.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Dietitians','🥗','Health &amp; Care','Food diaries and meal documentation benefit from timestamped photos. When clients photograph meals in Preserver, the exact time and location is embedded — making dietary records far more accurate and credible.','Client meal photos with automatic timestamps|Food diary support with GPS location|Consultation notes and dietary assessments|Progress photo documentation|Works without internet connection','','')">
+            <div class="icon">🥗</div><h3>Dietitians</h3><p>Food diary support, meal photos with timestamps for client records.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Home Healthcare','🏠','Health &amp; Care','Home healthcare workers need proof of visit and a record of what was done. GPS verification means every visit log proves exactly where the worker was, when they arrived and what they observed.','GPS-verified home visit logs|Care delivery documentation|Incident and safeguarding records|Medication administration notes|Works offline in areas with no signal','','')">
+            <div class="icon">🏠</div><h3>Home Healthcare</h3><p>GPS-verified home visit logs and care delivery documentation.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Psychologists','🧘','Health &amp; Care','Psychological session notes are among the most sensitive records a professional keeps. Preserver keeps everything on-device with no server upload — fully private by design, not just by policy.','Structured session notes and outcome tracking|Risk and safety assessment records|Private — no cloud upload unless you choose|Works offline for telehealth and home visits|Voice notes for faster documentation','','')">
+            <div class="icon">🧘</div><h3>Psychologists</h3><p>Structured session notes and outcome tracking with full privacy.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Youth Workers','🧑‍🤝‍🧑','Health &amp; Care','Youth workers operating in community settings need to document interactions carefully. GPS and timestamp metadata means every field interaction record is verifiable — important for safeguarding and incident investigations.','Field interaction logs with GPS and timestamps|Incident documentation with location evidence|Outreach activity records|Safeguarding observations|Works offline in community settings','','')">
+            <div class="icon">🧑‍🤝‍🧑</div><h3>Youth Workers</h3><p>Field interaction logs and incident documentation with location data.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Pharmacists','💊','Health &amp; Care','Pharmacist consultations and medication counselling sessions benefit from accurate records. Preserver provides private, timestamped note-taking that stays on-device.','Medication counselling notes|Patient consultation records|Interaction and adverse event documentation|Private — data stays on device|No account required','','')">
+            <div class="icon">💊</div><h3>Pharmacists</h3><p>Medication counselling notes and patient interaction logs.</p><span class="read-more">Read more </span></div>
+        </div>
+      </div>
+
+      <div class="uses-category">
+        <h2>👷 Trades &amp; <span>Construction</span></h2>
+        <div class="use-grid">
+          <div class="use-card" onclick="openModal('Tradespeople','👷','Trades &amp; Construction','Trades disputes are one of the most common small business headaches in Australia. A single timestamped before/after photo can resolve a customer dispute in minutes — proving exactly when and where the job was done. Preserver makes this documentation automatic.','Arrival photo proving time, date and address|Pre-work condition shots — existing damage documented|Progress photos for multi-day or complex jobs|Completion photos with GPS and timestamp embedded|Voice note handover summary at sign-off','/blog/tradies/','How Tradespeople Use Timestamped Photos')">
+            <div class="icon">👷</div><h3>Tradespeople</h3><p>Before/after job photos with timestamps — dispute-proof documentation.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Civil Engineers','🏗️','Trades &amp; Construction','Civil engineering projects require detailed site inspection logs with verifiable location data. Preserver provides GPS-tagged observations and progress records that work in areas with no mobile signal.','Site inspection logs with GPS coordinates|Construction progress documentation|Safety observation records|Defect and deviation documentation|Works offline on remote or underground sites','','')">
+            <div class="icon">🏗️</div><h3>Civil Engineers</h3><p>Site inspection logs, GPS-tagged observations and progress records.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Cleaners','🧹','Trades &amp; Construction','Cleaning contractors face disputes about whether work was completed and to what standard. Timestamped completion photos with GPS coordinates provide irrefutable proof of when and where the job was done.','Job completion photos with timestamps and GPS|Pre-clean condition documentation|Client property condition records|Works offline in buildings with poor signal|Shareable reports for client sign-off','','')">
+            <div class="icon">🧹</div><h3>Cleaners</h3><p>Job completion photos and client sign-off records with time and location proof.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Electricians','🔌','Trades &amp; Construction','Electrical compliance documentation requires photographic proof of installations. Preserver provides timestamped compliance photos and circuit documentation that travels with the job record.','Compliance photos with automatic timestamps|Circuit and installation documentation|Certificate of electrical safety support records|Before/after photos for renovation work|Works offline in new builds without signal','','')">
+            <div class="icon">🔌</div><h3>Electricians</h3><p>Compliance photos, circuit documentation and sign-off records.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Plumbers','🪠','Trades &amp; Construction','Plumbing disputes about pre-existing damage or completed work are common. Timestamped before/after photos embedded with GPS coordinates give plumbers the documentation they need for insurance and warranty claims.','Before/after documentation with timestamps and GPS|Pre-existing damage records|Completion photos for insurance purposes|Works offline in underground and basement environments|Voice notes for job summaries','','')">
+            <div class="icon">🪠</div><h3>Plumbers</h3><p>Before/after documentation for insurance and warranty — timestamped and GPS-tagged.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Builders','🏠','Trades &amp; Construction','Multi-stage building projects require a continuous documentary record. Preserver provides milestone documentation, subcontractor records and progress photos with automatic timestamps across the full project timeline.','Construction milestone documentation|Subcontractor arrival and completion records|Progress photos with timestamps across all stages|Defect and variation records|Works offline on site','','')">
+            <div class="icon">🏠</div><h3>Builders</h3><p>Progress photos, subcontractor records and milestone documentation.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Property Managers','🔑','Trades &amp; Construction','Entry and exit condition reports are the foundation of tenancy dispute resolution. Timestamped photos with GPS coordinates taken at the property provide the definitive record of condition at a specific date and time.','Entry and exit condition reports with timestamps|GPS-verified property inspection records|Maintenance request documentation|Tenant dispute evidence records|Works offline in buildings with poor signal','','')">
+            <div class="icon">🔑</div><h3>Property Managers</h3><p>Entry/exit condition reports — the definitive tenant dispute record.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Arborists','🌳','Trades &amp; Construction','Tree assessments require precise location data and photographic documentation. Preserver provides GPS-tagged tree records with photos and notes that work in remote properties and bushland without mobile signal.','Tree assessment notes with GPS coordinates|Pre and post-work photographic records|Hazard and risk documentation|Works offline in remote and bushland locations|Shareable reports for council and insurance','','')">
+            <div class="icon">🌳</div><h3>Arborists</h3><p>Tree assessment notes, pre/post-work photos and site documentation with GPS.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Painters','🎨','Trades &amp; Construction','Surface condition before painting is critical for dispute resolution. Preserver lets painters document existing cracks, stains and damage before starting work — with automatic timestamps proving when each photo was taken.','Pre-work surface condition records|Completion photos with timestamps|Customer property condition documentation|Works offline in buildings and remote locations|Simple to share with clients','','')">
+            <div class="icon">🎨</div><h3>Painters</h3><p>Surface condition records before and after, proving when the job was done.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Mechanics','🔧','Trades &amp; Construction','Vehicle condition documentation protects mechanics from disputes about pre-existing damage. Preserver provides timestamped photos and voice notes for every vehicle that comes through the workshop.','Vehicle condition photos on arrival|Pre-existing damage documentation|Job completion records with timestamps|Customer handover documentation|Parts and repair photographic evidence','','')">
+            <div class="icon">🔧</div><h3>Mechanics</h3><p>Vehicle condition records, job notes and customer handover documentation.</p><span class="read-more">Read more </span></div>
+        </div>
+      </div>
+
+      <div class="uses-category">
+        <h2>🌾 Field &amp; <span>Remote Work</span></h2>
+        <div class="use-grid">
+          <div class="use-card" onclick="openModal('Agriculture','🌾','Field &amp; Remote Work','Farmers and agricultural workers covering vast properties need documentation tools that work without mobile coverage. Preserver captures GPS-tagged observations via satellite — no signal required — and syncs when connectivity returns.','Paddock observation records with GPS coordinates|Crop condition photos and notes|Seasonal activity logs with timestamps|Works completely offline via satellite GPS|Irrigation and water management records','/blog/offline-field/','Field Research Without Wi-Fi')">
+            <div class="icon">🌾</div><h3>Agriculture</h3><p>Paddock observations and crop records — works completely offline.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Fly-In Fly-Out','✈️','Field &amp; Remote Work','FIFO workers operate in areas with no mobile coverage for extended periods. Preserver works via satellite GPS — capturing timestamped records with precise location data whether you\'re underground, in the air, or hundreds of kilometres from a tower.','Remote site logs with GPS and timestamps|Safety observation records|Equipment condition documentation|Works offline — no mobile signal required|Shift notes and activity records','/blog/offline-field/','Field Research Without Wi-Fi')">
+            <div class="icon">✈️</div><h3>Fly-In Fly-Out</h3><p>Remote site logs with GPS — no internet connection needed.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Forestry','🌲','Field &amp; Remote Work','Forestry operations require GPS-tagged documentation across large, remote areas. Preserver captures tree surveys, harvesting logs and environmental observations with satellite GPS — no coverage required.','GPS-tagged tree surveys and assessments|Harvesting logs with location records|Environmental observations and compliance notes|Works offline in dense forest and remote areas|Boundary and access road documentation','','')">
+            <div class="icon">🌲</div><h3>Forestry</h3><p>GPS-tagged tree surveys, harvesting logs and environmental observations.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Mining','⛏️','Field &amp; Remote Work','Mining operations require safety-grade incident records and shift observations with verifiable timestamps. Preserver works underground and in remote sites where mobile coverage is unavailable.','Safety incident records with timestamps and GPS|Shift notes and observation logs|Equipment condition and maintenance records|Works underground via satellite GPS|Compliance documentation for site audits','','')">
+            <div class="icon">⛏️</div><h3>Mining</h3><p>Safety incident records and shift notes — offline-first, evidence-grade.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Environmental Consultants','🌿','Field &amp; Remote Work','Environmental surveys require precise GPS coordinates and timestamped field data. Preserver captures species observations, site conditions and measurement notes with satellite GPS in areas far from any signal.','Species and habitat observation records|GPS-tagged baseline survey data|Site condition photography with coordinates|Works in national parks and remote reserves|Supports regulatory and EIS documentation','/blog/offline-field/','Field Research Without Wi-Fi')">
+            <div class="icon">🌿</div><h3>Environmental Consultants</h3><p>GPS-tagged field data — works where there is no signal.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Wildlife Rangers','🦅','Field &amp; Remote Work','Rangers patrolling remote areas need GPS-verified patrol logs and animal sighting records. Preserver captures everything via satellite GPS — no mobile coverage needed.','Animal sighting records with GPS coordinates|Patrol logs with automatic timestamps|Poaching and illegal activity incident reports|Works offline in remote reserves|Evidence-grade photo documentation','','')">
+            <div class="icon">🦅</div><h3>Wildlife Rangers</h3><p>Animal sightings, patrol logs and GPS-tagged field notes.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Water Utilities','💧','Field &amp; Remote Work','Water utility field workers need GPS-verified asset inspection records and fault reports. Preserver provides location-stamped documentation that works in remote pipeline corridors without mobile signal.','Asset inspection logs with GPS coordinates|Fault and defect reports with photos|Maintenance records with timestamps|Works offline along remote pipelines and waterways|Supports compliance reporting','','')">
+            <div class="icon">💧</div><h3>Water Utilities</h3><p>Asset inspection logs and fault reports with GPS verification.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Geologists','🌍','Field &amp; Remote Work','Geological field surveys require precise GPS coordinates for every sample and observation. Preserver captures rock type observations, sample notes and site photos via satellite GPS in areas with zero connectivity.','Rock type and formation observations with GPS|Sample collection records with coordinates|Site photography with automatic timestamps|Works offline in remote and underground locations|Survey data for mapping and reporting','','')">
+            <div class="icon">🌍</div><h3>Geologists</h3><p>GPS-tagged survey data and field notes without connectivity.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Agronomists','🚜','Field &amp; Remote Work','Agronomists assessing large properties need GPS-tagged crop and soil records that work without mobile coverage. Preserver captures observations at precise coordinates across thousands of hectares.','Paddock health assessments with GPS coordinates|Crop condition records across large properties|Soil observation and sampling notes|Works offline across remote agricultural land|Irrigation and drainage documentation','','')">
+            <div class="icon">🚜</div><h3>Agronomists</h3><p>Paddock health assessments and crop condition records across large properties.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Oil &amp; Gas','🛢️','Field &amp; Remote Work','Oil and gas field operations require safety-grade documentation in areas far from any mobile coverage. Preserver provides timestamped records with satellite GPS for remote operations.','Field operations logs with GPS and timestamps|Maintenance and inspection records|Safety incident documentation|Works offline on remote rigs and pipelines|Compliance records for regulatory requirements','','')">
+            <div class="icon">🛢️</div><h3>Oil &amp; Gas</h3><p>Field operations logs and incident documentation in remote locations.</p><span class="read-more">Read more </span></div>
+        </div>
+      </div>
+
+      <div class="uses-category">
+        <h2>⚖️ Legal, Compliance &amp; <span>Professional</span></h2>
+        <div class="use-grid">
+          <div class="use-card" onclick="openModal('Compliance Officers','⚖️','Legal &amp; Compliance','Compliance documentation is only as strong as its evidence. Preserver provides GPS and timestamp metadata on every photo and note — making compliance records harder to dispute and easier to defend in audits.','Site inspection records with GPS and timestamps|Regulatory compliance documentation|Audit trail records with verifiable metadata|Works offline on remote or restricted sites|Evidence-grade photos with embedded location data','','')">
+            <div class="icon">⚖️</div><h3>Compliance Officers</h3><p>Evidence-grade records, audit logs and regulatory documentation.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Investigators','🔍','Legal &amp; Compliance','Investigators need timestamped evidence capture that proves when and where observations were made. Preserver provides GPS and timestamp metadata that travels with every photo and note.','Scene documentation with GPS coordinates|Witness interview notes with timestamps|Timestamped evidence photography|Surveillance observation logs|Chain of custody documentation support','','')">
+            <div class="icon">🔍</div><h3>Investigators</h3><p>Scene documentation and timestamped evidence with GPS proof of location.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Insurance Assessors','🛡️','Legal &amp; Compliance','Insurance assessments require verifiable documentation of damage at a specific time and location. Preserver provides GPS-verified photos and notes that strengthen claim assessments.','Damage assessment photos with GPS and timestamps|Site condition records at time of assessment|Voice notes for rapid assessment documentation|Works offline in remote or damaged-infrastructure areas|Supports claims processing with verifiable evidence','','')">
+            <div class="icon">🛡️</div><h3>Insurance Assessors</h3><p>Damage assessment photos and GPS-verified site records for claims.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Legal Professionals','⚖️','Legal &amp; Compliance','Site visits and evidence documentation benefit from automatic GPS and timestamp metadata. Preserver provides a private, evidence-grade capture tool for legal professionals.','Site visit documentation with GPS and timestamps|Evidence photography with embedded metadata|Client meeting notes — private, on-device|Court-ready timestamped records|Works offline in any location','','')">
+            <div class="icon">⚖️</div><h3>Legal Professionals</h3><p>Site visit notes and timestamped observation records.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Council Inspectors','🏛️','Legal &amp; Compliance','Planning and compliance inspections require GPS-verified photographic evidence. Preserver captures timestamped site observations with coordinates for regulatory reporting and enforcement actions.','Planning compliance inspection records|GPS-tagged site observations and photos|Enforcement notice documentation|Works offline on remote or rural properties|Supports regulatory reporting requirements','','')">
+            <div class="icon">🏛️</div><h3>Council Inspectors</h3><p>Planning compliance inspections with GPS-tagged observations.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Bookkeepers','📚','Legal &amp; Compliance','Receipt capture and expense documentation benefits from timestamped photos with GPS. Preserver provides a simple, private way to record expenses and client interactions on the go.','Receipt and invoice photography with timestamps|Expense notes and records|Client meeting notes|Mileage and travel records with GPS|Works offline without mobile data','','')">
+            <div class="icon">📚</div><h3>Bookkeepers</h3><p>Receipt capture, expense notes and meeting records with timestamped evidence.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Business Analysts','💼','Legal &amp; Compliance','Stakeholder interviews and field observations benefit from accurate, timestamped records. Preserver provides voice-to-text notes, photos and written capture — all with GPS and timestamp metadata.','Stakeholder interview notes with timestamps|Process observation records|Research capture with GPS location|Voice notes for rapid documentation|Private — no cloud upload required','','')">
+            <div class="icon">💼</div><h3>Business Analysts</h3><p>Stakeholder interview notes and process observations in the field.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Security Officers','🔐','Legal &amp; Compliance','Security patrol logs and incident reports require verifiable timestamps and location records. Preserver provides GPS-verified patrol documentation that works in buildings with poor mobile signal.','Patrol logs with GPS-verified timestamps|Incident reports with location evidence|Security observation records|Works offline in underground carparks and remote sites|Evidence-grade documentation for investigations','','')">
+            <div class="icon">🔐</div><h3>Security Officers</h3><p>Patrol logs, incident reports and GPS-verified site inspection records.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Emergency Services','🚒','Legal &amp; Compliance','Incident scene documentation requires accurate timestamps and GPS coordinates. Preserver provides rapid capture in the field — works offline and records exact location via satellite GPS.','Incident scene documentation with GPS and timestamps|Safety observation records|Time-critical field notes with location|Works offline in remote and disaster-affected areas|Evidence photography with embedded metadata','','')">
+            <div class="icon">🚒</div><h3>Emergency Services</h3><p>Incident scene documentation and time-critical field notes.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Actuaries','📊','Legal &amp; Compliance','Field data collection for actuarial work benefits from precise timestamps and location data. Preserver provides a simple capture tool for observation notes and research data in the field.','Observation notes with automatic timestamps|Field research data capture with GPS|Audit-trail documentation|Voice-to-text for rapid data entry|Private — no server upload','','')">
+            <div class="icon">📊</div><h3>Actuaries</h3><p>Observation notes and field research with audit-trail timestamps.</p><span class="read-more">Read more </span></div>
+        </div>
+      </div>
+
+      <div class="uses-category">
+        <h2>📰 Media, Research &amp; <span>Education</span></h2>
+        <div class="use-grid">
+          <div class="use-card" onclick="openModal('Journalists','📰','Media &amp; Research','Journalists need verifiable evidence that their documentation was captured at a specific time and place. Preserver embeds GPS and timestamp metadata into every photo and note — making source material and scene documentation harder to challenge.','Source interview notes with timestamps|Scene documentation with GPS coordinates|Timestamped photographic evidence|Works offline in remote or dangerous locations|Verifiable metadata supports editorial integrity','/blog/gps-metadata/','Why GPS Metadata Matters')">
+            <div class="icon">📰</div><h3>Journalists</h3><p>Source interviews and verifiable timestamped evidence for investigations.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Researchers','🎓','Media &amp; Research','Field researchers working in remote areas need GPS-tagged data capture that works without connectivity. Preserver records observations, photos and voice notes with satellite GPS — syncing when connectivity returns.','Field data collection with GPS coordinates|Interview and observation notes with timestamps|GPS-tagged research location records|Works offline in remote research sites|Supports academic and regulatory reporting','/blog/offline-field/','Field Research Without Wi-Fi')">
+            <div class="icon">🎓</div><h3>Researchers</h3><p>Field data collection and GPS-tagged observations — offline-capable.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Teachers','🏫','Media &amp; Research','Teachers can use Preserver to document classroom observations, student interactions and resource capture with automatic timestamps. Private and offline-capable.','Classroom observation records with timestamps|Student interaction documentation|Resource and curriculum capture|Field trip location records|Private — data stays on device','','')">
+            <div class="icon">🏫</div><h3>Teachers</h3><p>Classroom observations and student interaction logs with timestamps.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Scientists','🔬','Media &amp; Research','Scientific field work requires precise timestamps and GPS coordinates for every observation. Preserver captures lab notes, field observations and experiment records with exact location data via satellite GPS.','Lab notes and experiment records with timestamps|Field observation records with GPS coordinates|Sample collection location documentation|Works offline in remote field sites|Data capture without connectivity','','')">
+            <div class="icon">🔬</div><h3>Scientists</h3><p>Lab notes and field observations with precise timestamps and locations.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Photographers','📷','Media &amp; Research','Professional photographers benefit from GPS-tagged shoot location records and client brief notes. Preserver provides behind-the-scenes documentation with automatic timestamps that can support licensing and copyright claims.','GPS-tagged shoot location records|Client brief notes with timestamps|Behind-the-scenes documentation|Location scouting records with coordinates|Supports copyright and licensing documentation','','')">
+            <div class="icon">📷</div><h3>Photographers</h3><p>GPS-tagged shoot locations and behind-the-scenes documentation.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Documentary Makers','📡','Media &amp; Research','Documentary production requires accurate location scouting records and interview notes. Preserver provides GPS-tagged location documentation and timestamped production logs for every stage of a production.','Location scouting records with GPS coordinates|Interview prep and subject notes|Timestamped production logs|Works offline in remote filming locations|Evidence photography for fact-checking','','')">
+            <div class="icon">📡</div><h3>Documentary Makers</h3><p>Location scouting notes and timestamped production logs.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Archaeologists','🏺','Media &amp; Research','Archaeological fieldwork requires precise GPS coordinates for every find location. Preserver records artefact photos with embedded GPS and timestamps — creating a verifiable chain of custody from discovery to lab.','Find location records with precise GPS coordinates|Artefact photography with timestamps|Excavation notes and layer documentation|Works offline on remote dig sites|Supports provenance and chain of custody records','','')">
+            <div class="icon">🏺</div><h3>Archaeologists</h3><p>GPS-tagged find locations and artefact photography with precise coordinates.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Copywriters','✍️','Media &amp; Research','Voice note capture makes Preserver a powerful idea-capture tool for copywriters. Record briefs, research notes and creative ideas with automatic timestamps — just capture.','Voice note idea capture with timestamps|Client briefing notes|Research capture on the go|Interview notes with automatic timestamps|Works offline without mobile data','','')">
+            <div class="icon">✍️</div><h3>Copywriters</h3><p>Voice note capture, research notes and client briefing records.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Developers','💻','Media &amp; Research','Bug documentation and field testing benefit from precise timestamps and GPS location. Preserver provides a quick capture tool for client site observations and device-specific testing notes.','Bug documentation with timestamps and GPS|Field testing notes and observations|Client site visit records|Device and OS condition documentation|Works offline in testing environments','','')">
+            <div class="icon">💻</div><h3>Developers</h3><p>Bug documentation, field testing notes and client site observations.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Market Researchers','📊','Media &amp; Research','Field market research benefits from GPS-tagged interview locations and observation records. Preserver provides a simple capture tool that works offline in shopping centres, events and remote locations.','Field interview notes with GPS location|Consumer observation records with timestamps|Location-tagged research data|Works offline at events and in buildings|Private — no data shared without consent','','')">
+            <div class="icon">📊</div><h3>Market Researchers</h3><p>Field interview notes and GPS-tagged research locations.</p><span class="read-more">Read more </span></div>
+        </div>
+      </div>
+
+      <div class="uses-category">
+        <h2>🎪 Events, Hospitality &amp; <span>Services</span></h2>
+        <div class="use-grid">
+          <div class="use-card" onclick="openModal('Event Planners','🎪','Events &amp; Hospitality','Event planners visiting venues and meeting vendors need timestamped records of every site visit and discussion. Preserver provides GPS-tagged venue photos and voice notes with automatic timestamps.','Venue inspection photos with GPS and timestamps|Vendor meeting notes with timestamps|Timeline and logistics documentation|Budget and quote capture on the go|Works offline at remote venues','','')">
+            <div class="icon">🎪</div><h3>Event Planners</h3><p>Venue photos, vendor notes and timeline logs with GPS and timestamps.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Caterers','🍽️','Events &amp; Hospitality','Catering operations require timestamped delivery confirmation and food safety records. Preserver provides setup photos, temperature logs and delivery records with automatic timestamps.','Setup and completion photos with timestamps|Food delivery confirmation records|Temperature log notes with timestamps|Client sign-off documentation|Works offline at remote event venues','','')">
+            <div class="icon">🍽️</div><h3>Caterers</h3><p>Setup photos, temperature logs and delivery confirmation records.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Couriers &amp; Drivers','🚗','Events &amp; Hospitality','Delivery disputes require proof of where and when a delivery was made. GPS-verified delivery records in Preserver prove exactly when the courier arrived and what condition the goods were in.','GPS-verified delivery records with timestamps|Proof of drop-off photos with location|Vehicle condition documentation|Works offline without mobile data|Unambiguous delivery proof for disputes','','')">
+            <div class="icon">🚗</div><h3>Couriers &amp; Drivers</h3><p>GPS-verified delivery records and proof of drop-off.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Retail Auditors','🛒','Events &amp; Hospitality','Store compliance checks and planogram audits require timestamped photographic evidence. Preserver provides GPS-tagged merchandising records with automatic timestamps across multiple store locations.','Store compliance check photos with timestamps|Planogram and merchandising records|GPS-verified store visit logs|Works offline in buildings with poor signal|Multi-store audit trail documentation','','')">
+            <div class="icon">🛒</div><h3>Retail Auditors</h3><p>Store compliance checks, planogram photos and timestamped records.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Accommodation','🏨','Events &amp; Hospitality','Room condition records taken before and after guests protect accommodation operators from damage disputes. GPS and timestamp metadata proves exactly when inspections were conducted.','Room condition records before and after guests|GPS and timestamp verification for inspections|Maintenance request documentation|Works offline in buildings with poor signal|Supports insurance and dispute claims','','')">
+            <div class="icon">🏨</div><h3>Accommodation</h3><p>Room condition records with GPS and timestamp for every inspection.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Pet Care','🐾','Events &amp; Hospitality','Dog walkers and pet sitters can provide GPS-verified proof of visits to pet owners. Preserver records visit logs with exact location and time — giving owners transparency and carers protection.','GPS-verified visit logs with timestamps|Activity and wellbeing notes during visits|Photo documentation of pets during care|Works offline without mobile data|Transparency for pet owners, protection for carers','','')">
+            <div class="icon">🐾</div><h3>Pet Care</h3><p>GPS proof of location for dog walkers and pet sitters.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Babysitters &amp; Nannies','👶','Events &amp; Hospitality','Transparent care records give parents peace of mind and protect carers from false allegations. Preserver provides timestamped activity logs and notes that document every care session.','Activity logs and routine records with timestamps|Feeding and sleep records|Incident and wellbeing notes|Transparency for parents, protection for carers|Private — data stays on device','','')">
+            <div class="icon">👶</div><h3>Babysitters &amp; Nannies</h3><p>Activity logs and daily notes with timestamps for transparent care records.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Personal Trainers','🏋️','Events &amp; Hospitality','Session records and client progress documentation benefit from automatic timestamps. Preserver provides a private, offline-capable capture tool for training notes and client progress photos.','Session notes with timestamps|Client progress photos over time|Workout and exercise records|Works offline at outdoor and remote training locations|Private — data stays on device','','')">
+            <div class="icon">🏋️</div><h3>Personal Trainers</h3><p>Session notes, client progress records and workout logs with timestamps.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Tourism Operators','🌐','Events &amp; Hospitality','Tourism operators running activities in remote areas need GPS-tagged safety records and activity logs. Preserver works offline via satellite GPS — capturing records anywhere on the planet.','Activity logs with GPS and timestamps|Safety check and compliance records|GPS-tagged tour route documentation|Works offline in remote areas|Incident and emergency documentation','','')">
+            <div class="icon">🌐</div><h3>Tourism Operators</h3><p>Activity logs, safety check records and GPS-tagged tour documentation.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Food Scientists','🔬','Events &amp; Hospitality','Tasting notes and recipe iterations benefit from precise timestamps. Preserver provides voice notes, text records and timestamped photos for lab observations and product development.','Tasting notes and sensory records with timestamps|Recipe iteration documentation|Lab observations with precise timestamps|Works offline in production and lab environments|Private — data stays on device','','')">
+            <div class="icon">🔬</div><h3>Food Scientists</h3><p>Tasting notes, recipe iterations and lab observations with timestamps.</p><span class="read-more">Read more </span></div>
+        </div>
+      </div>
+
+      <div class="uses-category">
+        <h2>👨‍👩‍👧‍👦 Personal &amp; <span>Lifestyle</span></h2>
+        <div class="use-grid">
+          <div class="use-card" onclick="openModal('Family Records','👨‍👩‍👧‍👦','Personal &amp; Lifestyle','Every family has moments worth preserving with proof of exactly when and where they happened. Preserver provides a private, offline-capable family record that no algorithm will ever use or sell.','Family milestone records with timestamps and GPS|Private family photo and voice archives|Works offline anywhere in the world|No data sold or shared|Captures the proof that this moment happened here, now','','')">
+            <div class="icon">👨‍👩‍👧‍👦</div><h3>Family Records</h3><p>Capture life's moments with proof of time and place — a private family record.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Fishing','🎣','Personal &amp; Lifestyle','GPS-tagged catch records with photos and conditions log — proving exactly where and when that catch was made. Works completely offline without mobile data.','GPS-tagged catch records with coordinates|Catch photos with automatic timestamps|Water conditions and weather notes|Works without mobile data on the water|Fishing spot records that stay private','','')">
+            <div class="icon">🎣</div><h3>Fishing</h3><p>GPS-tagged catch records and conditions log — works without mobile data.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Digital Diary','📔','Personal &amp; Lifestyle','A digital diary that automatically records when and where each entry was made. Voice, text and photo entries with GPS and timestamp — a richer record than any notebook.','Voice, text and photo diary entries|Automatic time, date and GPS location tagging|Private — data never leaves your device|Works offline anywhere|A richer record than a notebook','','')">
+            <div class="icon">📔</div><h3>Digital Diary</h3><p>Voice, text and photo entries with automatic date, time and location tagging.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Travel Blog','✈️','Personal &amp; Lifestyle','Geo-tagged travel photos, voice notes and place records — all captured offline without roaming data. Every entry is automatically tagged with the exact location and time, ready to become a blog post or travel memoir.','Geo-tagged travel photos and voice notes|Location records without roaming data|Works offline internationally|Automatic GPS and timestamp on every entry|Ready to export for blog or social content','','')">
+            <div class="icon">✈️</div><h3>Travel Blog</h3><p>Geo-tagged travel photos and voice notes — offline-ready for remote travel.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Adventure &amp; Hiking','🏔️','Personal &amp; Lifestyle','Trail logs and summit records with GPS verification — without needing mobile coverage. Preserver uses satellite GPS to capture precise coordinates anywhere on the planet.','GPS-tagged trail and summit records|Works without mobile coverage — satellite GPS|Route photos with automatic timestamps|Adventure and achievement logs|Emergency location records','','')">
+            <div class="icon">🏔️</div><h3>Adventure &amp; Hiking</h3><p>Trail logs and summit records — GPS without Wi-Fi.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Artists','🎨','Personal &amp; Lifestyle','Work-in-progress documentation and inspiration capture with automatic timestamps. Preserver helps artists maintain a verifiable record of their creative process — useful for copyright, exhibition and portfolio purposes.','Work-in-progress documentation with timestamps|Inspiration capture with GPS location|Portfolio and exhibition records|Copyright documentation with verifiable dates|Private — data stays on device','','')">
+            <div class="icon">🎨</div><h3>Artists</h3><p>Work-in-progress documentation and inspiration capture with timestamps.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Family History','📜','Personal &amp; Lifestyle','Voice memoirs, photo archives and location-tagged family history records. Preserver captures the stories, places and faces that define a family — privately, and for future generations.','Voice memoir recordings with timestamps|Photo archives with GPS location tags|Place-based family history records|Works offline at historical sites and family properties|Private — no data sold or shared','','')">
+            <div class="icon">📜</div><h3>Family History</h3><p>Voice memoirs and location-tagged family history records for future generations.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Home Renovation','🏡','Personal &amp; Lifestyle','Before and after photos with timestamps protect homeowners and contractors alike. Preserver provides a continuous photographic record of renovation progress — useful for insurance, finance valuations and resale.','Before/after photos with timestamps and GPS|Contractor work progress records|Insurance and valuation documentation|Defect and warranty evidence|Works offline on building sites','','')">
+            <div class="icon">🏡</div><h3>Home Renovation</h3><p>Before/after photos with timestamps for insurance and resale.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Gardeners','🌱','Personal &amp; Lifestyle','GPS-tagged garden observations and planting records across large properties. Preserver lets gardeners document what was planted where and when — without needing mobile coverage in the back paddock.','Planting records with GPS and timestamps|Growth progress photos over time|GPS-tagged garden observations|Works offline across large properties|Seasonal and condition records','','')">
+            <div class="icon">🌱</div><h3>Gardeners</h3><p>Planting records and GPS-tagged observations across large properties.</p><span class="read-more">Read more </span></div>
+          <div class="use-card" onclick="openModal('Cyclists','🚴','Personal &amp; Lifestyle','Route photos and ride notes with GPS-tagged cycling journals. Preserver works without mobile coverage on remote trails — capturing the scenery and achievement with verifiable location records.','GPS-tagged route photos and notes|Ride journals with automatic timestamps|Works offline on remote trails|Summit and achievement records|Private cycling log ','','')">
+            <div class="icon">🚴</div><h3>Cyclists</h3><p>Route photos and GPS-tagged cycling journals — no internet on the trail.</p><span class="read-more">Read more </span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="container">
+      <h2>Don't see your industry?</h2>
+      <p>If you need to capture something with proof of time and place, Preserver works for you. One-time purchase of $49 USD. No subscription, no in-app purchases, no add-ons — ever.</p>
+      <div class="badge-row" style="justify-content:center;margin-bottom:24px">
+        <a href="https://apps.apple.com/au/app/preserver/id6443649784?utm_source=preserver.me&utm_medium=uses&utm_campaign=cta" aria-label="Download on the App Store" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" style="height:50px"></a>
+        <a href="https://play.google.com/store/apps/details?id=au.com.observerapp.observer&utm_source=preserver.me&utm_medium=uses&utm_campaign=cta" aria-label="Get it on Google Play" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" style="height:50px"></a>
+      </div>
+      <p style="font-size:13px;color:#888">Running a team, or want to white-label Preserver for your industry? <a href="/contactus/" style="color:#FF4500;font-weight:600">Get in touch</a>.</p>
+    </div>
+  </section>
+
+</main>
+
+<script src="/assets/preserver-shared.js?v=10"></script>
+<script>
+var USES_DATA = {};
+
+function openModal(title, icon, cat, desc, pointsStr, blogUrl, blogTitle) {
+  document.getElementById('modal-icon').textContent = icon;
+  document.getElementById('modal-title-text').textContent = title;
+  document.getElementById('modal-cat').textContent = cat;
+  document.getElementById('modal-desc').textContent = desc;
+  var ul = document.getElementById('modal-points');
+  ul.innerHTML = '';
+  pointsStr.split('|').forEach(function(p) {
+    if (!p.trim()) return;
+    var li = document.createElement('li');
+    li.textContent = p.trim();
+    ul.appendChild(li);
+  });
+  var slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  var video = document.getElementById('modal-video');
+  video.pause();
+  video.src = '/media/uses/' + slug + '-video.mp4';
+  document.getElementById('modal-pdf-link').href = '/media/uses/' + slug + '-carousel.pdf';
+  var blogEl = document.getElementById('modal-blog');
+  if (blogUrl) {
+    blogEl.style.display = 'flex';
+    document.getElementById('modal-blog-link').href = blogUrl;
+    document.getElementById('modal-blog-link').textContent = blogTitle + ' →';
+  } else {
+    blogEl.style.display = 'none';
+  }
+  var overlay = document.getElementById('modal');
+  overlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('modal').classList.remove('active');
+  document.getElementById('modal-video').pause();
+  document.body.style.overflow = '';
+}
+
+document.getElementById('modal').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeModal();
+});
+</script>
+</body>
+</html>

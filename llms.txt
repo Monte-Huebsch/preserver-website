@@ -1,0 +1,44 @@
+# Preserver
+
+> Preserver is a professional mobile app for iOS and Android that captures text, voice, photos and video — each automatically stamped with the exact time, date and GPS coordinates at the moment of capture. No account required. No signal needed. Data stays on your device.
+
+Preserver is used across 70+ industries wherever timestamped, GPS-verified records matter: trades and construction, healthcare, field research, legal and compliance, journalism, agriculture, and personal record-keeping. It works completely offline via satellite GPS.
+
+## Key pages
+
+- [Home](https://preserver.me/): Overview of Preserver — what it does, pricing, features and how to purchase.
+- [Use Cases](https://preserver.me/uses/): 70+ industry use cases across Health & Care, Trades & Construction, Field & Remote Work, Legal & Compliance, Media & Research, Events & Hospitality, and Personal & Lifestyle.
+- [FAQ](https://preserver.me/faq/): Questions covering pricing, privacy, features, platforms and professional use.
+- [Blog](https://preserver.me/blog/): Articles on GPS metadata, field documentation, pricing and voice vs text capture.
+
+## Blog articles
+
+- [Why GPS Metadata Matters More Than You Think](https://preserver.me/blog/gps-metadata/): How GPS coordinates are embedded in photos, why most apps strip them, and why keeping that metadata matters for evidence.
+- [How Tradespeople Use Timestamped Photos to Protect Themselves](https://preserver.me/blog/tradies/): Before/after job documentation for dispute resolution and insurance.
+- [Why We Chose One-Time Pricing](https://preserver.me/blog/ad-funded/): Why Preserver is a $49 USD one-time purchase with no subscription or ads.
+- [Field Research Without Wi-Fi: Preserver in Remote Australia](https://preserver.me/blog/offline-field/): Offline-first capture for researchers and field workers without mobile coverage.
+- [Voice Notes vs Typed Notes: When to Use Each](https://preserver.me/blog/voice-vs-text/): Practical guide to choosing the right capture type.
+
+## About
+
+- **Developer:** Preserver
+- **Australian address:** Brisbane, Australia
+- **US address:** Preserver LLC, 1234 Cranberry Avenue, Sunnyvale, California 94087, USA
+- **Platforms:** iOS (App Store), Android (Google Play)
+- **Price:** $49 USD one-time purchase (perpetual licence)
+- **Privacy:** No account required. No data sold. Captures stored on-device only.
+- **App Store:** https://apps.apple.com/au/app/preserver/id6443649784
+- **Google Play:** https://play.google.com/store/apps/details?id=au.com.observerapp.observer
+- **Contact:** https://preserver.me/contactus/
+
+## Legal
+
+- [Privacy Policy](https://preserver.me/legals/privacy/)
+- [Terms & Conditions](https://preserver.me/legals/terms/)
+- [Cookie Policy](https://preserver.me/legals/cookies/)
+- [EULA](https://preserver.me/legals/eula/)
+- [Disclaimer](https://preserver.me/legals/disclaimer/)
+
+## Full content
+
+- [Full page content for AI crawlers](https://preserver.me/llms-full.txt): Complete text of every major page for AI systems that benefit from full content access.

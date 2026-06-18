@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="msvalidate.01" content="DC85CCEB1CF6D6069F2EE2599AF7D6A9">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://agents.dante-ai.com">
+  <link rel="dns-prefetch" href="https://formsubmit.co">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preserver — Capture Anything. Anywhere. Anytime.</title>
+  <!-- SEO -->
+  <meta name="description" content="Professional capture app for iOS and Android. Text, voice, photos and video — automatically stamped with GPS, time and date. One-time purchase. No subscription.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://preserver.me/">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Preserver — Capture Anything. Anywhere. Anytime.">
+  <meta property="og:description" content="Professional capture app for iOS and Android. Text, voice, photos and video — automatically stamped with GPS, time and date. One-time purchase. No subscription.">
+  <meta property="og:url" content="https://preserver.me/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Preserver">
+  <meta property="og:image" content="https://preserver.me/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Preserver life ring logo">
+  <meta property="og:locale" content="en_AU">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@Preserver_app">
+  <meta name="twitter:title" content="Preserver — Capture Anything. Anywhere. Anytime.">
+  <meta name="twitter:description" content="Professional capture app for iOS and Android. Text, voice, photos and video — automatically stamped with GPS, time and date. One-time purchase. No subscription.">
+  <meta name="twitter:image" content="https://preserver.me/assets/og-image.png">
+  <link rel="icon" href="https://preserver.me/wp-content/uploads/2024/01/cropped-icon-32x32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="https://preserver.me/wp-content/uploads/2024/01/cropped-icon-180x180.png">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script src="https://agents.dante-ai.com/embed.js" data-agent-id="c7e8d438-30a2-4b90-843b-215736b6c8c7" data-widget-key="wk_z4QNp_ZvzXqX-scD9pd0nY_9AZ2yq9Ao" crossorigin="anonymous" async></script>
+
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Preserver",
+    "operatingSystem": "iOS, Android",
+    "applicationCategory": "UtilitiesApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "49",
+      "priceCurrency": "USD"
+    },
+    "description": "Professional GPS timestamped capture app. Text, voice, photos and video. One-time purchase of $49 USD. No subscription. No signal needed.",
+    "url": "https://preserver.me",
+    "image": "https://preserver.me/assets/og-image.png",
+    "downloadUrl": [
+      "https://apps.apple.com/au/app/preserver/id6443649784",
+      "https://play.google.com/store/apps/details?id=au.com.observerapp.observer"
+    ],
+    "screenshot": "https://preserver.me/assets/og-image.png",
+    "featureList": "GPS timestamping, Offline capture, Voice recording, Photo capture, Video capture, No account required, Private data storage, Perpetual licence"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Preserver",
+    "url": "https://preserver.me",
+    "logo": "https://preserver.me/assets/og-image.png",
+    "sameAs": [
+      "https://www.facebook.com/Preserver.me/",
+      "https://x.com/Preserver_app",
+      "https://www.instagram.com/preserver.me/",
+      "https://www.linkedin.com/company/98613970/"
+    ],
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "addressLocality": "Brisbane",
+          "addressRegion": "Queensland",
+          "addressCountry": "AU"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "1234 Cranberry Avenue",
+        "addressLocality": "Sunnyvale",
+        "addressRegion": "California",
+        "postalCode": "94087",
+        "addressCountry": "US"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Preserver",
+    "url": "https://preserver.me",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://preserver.me/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+]
+</script>
+
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Preserver",
+    "operatingSystem": [
+      "iOS",
+      "Android"
+    ],
+    "applicationCategory": "UtilitiesApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "49",
+      "priceCurrency": "USD"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "114",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "downloadUrl": [
+      "https://apps.apple.com/au/app/preserver/id6443649784",
+      "https://play.google.com/store/apps/details?id=au.com.observerapp.observer"
+    ],
+    "url": "https://preserver.me",
+    "image": "https://preserver.me/assets/og-image.png"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Preserver",
+    "url": "https://preserver.me",
+    "image": "https://preserver.me/assets/og-image.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Brisbane",
+          "addressRegion": "Queensland",
+          "addressCountry": "AU"
+    },
+    "sameAs": [
+      "https://www.facebook.com/Preserver.me/",
+      "https://x.com/Preserver_app",
+      "https://www.instagram.com/preserver.me/",
+      "https://www.linkedin.com/company/98613970/"
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Preserver LLC",
+    "url": "https://preserver.me",
+    "image": "https://preserver.me/assets/og-image.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1234 Cranberry Avenue",
+      "addressLocality": "Sunnyvale",
+      "addressRegion": "California",
+      "postalCode": "94087",
+      "addressCountry": "US"
+    }
+  }
+]
+</script>
+  <link rel="alternate" hreflang="en-AU" href="https://preserver.me/">
+  <link rel="alternate" hreflang="en" href="https://preserver.me/">
+</head>
+<body>
+<main>
+
+  <!-- HERO -->
+  <section class="hero" style="padding:140px 0 80px;text-align:center;background:linear-gradient(180deg,#fafafa 0%,#fff 100%)" id="download">
+    <div class="container">
+      <h1 style="font-size:clamp(40px,7vw,72px);font-weight:800;line-height:1.1;letter-spacing:-1.5px;margin-bottom:20px">
+        Capture <span style="color:#FF4500">Anything</span>.<br>Anywhere. Anytime.
+      </h1>
+      <p style="font-size:clamp(18px,2.5vw,22px);color:#666;max-width:640px;margin:0 auto 36px">
+        Text, voice, photos, video — all in one place. Every capture automatically stamped with time, date and GPS. No subscription. No signal needed.
+      </p>
+      <div class="badge-row" style="justify-content:center;margin-bottom:20px">
+        <a href="https://apps.apple.com/au/app/preserver/id6443649784?utm_source=preserver.me&utm_medium=website&utm_campaign=hero" aria-label="Download on the App Store" target="_blank" rel="noopener">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" style="height:50px">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=au.com.observerapp.observer&utm_source=preserver.me&utm_medium=website&utm_campaign=hero" aria-label="Get it on Google Play" target="_blank" rel="noopener">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" style="height:50px">
+        </a>
+      </div>
+      <p style="font-size:13px;color:#aaa">Tap. Capture. Stamped. It's that simple.</p>
+      <div style="display:inline-flex;align-items:center;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:20px;padding:14px 28px;background:#f8f8f8;border-radius:99px">
+        <span style="font-size:13px;color:#555;display:flex;align-items:center;gap:6px">
+          <span style="color:#FF4500;font-weight:700">★ 4.9</span>&nbsp;Google Play
+        </span>
+        <span style="color:#ddd">|</span>
+        <span style="font-size:13px;color:#555;display:flex;align-items:center;gap:6px">
+          <span style="color:#FF4500;font-weight:700">100+</span>&nbsp;active users
+        </span>
+        <span style="color:#ddd">|</span>
+        <span style="font-size:13px;color:#555;display:flex;align-items:center;gap:6px">
+          <span style="color:#FF4500;font-weight:700">$49</span>&nbsp;once
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUE PROPS -->
+  <section class="section section--alt" id="features">
+    <div class="container">
+      <div class="section__eyebrow">Why Preserver?</div>
+      <h2>Everything you need to preserve your activities</h2>
+      <div class="props-grid">
+        <div class="prop-card">
+          <div class="icon">📡</div>
+          <h3>Works Offline</h3>
+          <p>No Wi-Fi. No Bluetooth. No mobile data. Capture with full metadata anywhere — underground, in the air, or miles from the nearest tower.</p>
+        </div>
+        <div class="prop-card">
+          <div class="icon">🔒</div>
+          <h3>Private by Design</h3>
+          <p>No registration. No account. Nothing shared unless you choose. Your data stays on your device — always.</p>
+        </div>
+        <div class="prop-card">
+          <div class="icon">📍</div>
+          <h3>Timestamp &amp; GPS on Every Capture</h3>
+          <p>Every text note, voice recording, photo and video is automatically stamped with irrefutable time, date and location metadata.</p>
+        </div>
+        <div class="prop-card">
+          <div class="icon">📱</div>
+          <h3>One Unified Capture Stream</h3>
+          <p>Stop flipping between four different apps. Text, voice-to-text, photos, video — everything in one place, ready to share or store.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" id="how-it-works">
+    <div class="container">
+      <div class="section__eyebrow">Simple by design</div>
+      <h2>How It Works</h2>
+      <div class="steps">
+        <div class="step"><h3>Open Preserver</h3><p>No login. Just tap the icon and you're ready.</p></div>
+        <div class="step"><h3>Capture Anything</h3><p>Type a note, record your voice, snap a photo, or shoot video.</p></div>
+        <div class="step"><h3>Auto-Stamped</h3><p>Time, date and GPS are baked into every capture — automatically.</p></div>
+        <div class="step"><h3>Share or Store</h3><p>Share to anyone, store to your cloud, or keep it local. It's your data.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- USE CASES -->
+  <section class="section section--alt" id="use-cases">
+    <div class="container">
+      <div class="section__eyebrow">40+ industries</div>
+      <h2>Who It's For</h2>
+      <div class="use-grid">
+        <div class="use-card"><div class="icon">👷</div><h3>Tradies</h3><p>Document completed work with timestamped photos.</p></div>
+        <div class="use-card"><div class="icon">📰</div><h3>Journalists</h3><p>Capture source material with verifiable time and location.</p></div>
+        <div class="use-card"><div class="icon">✈️</div><h3>Travelers</h3><p>Record memories offline. Works without roaming data.</p></div>
+        <div class="use-card"><div class="icon">👔</div><h3>Professionals</h3><p>Voice-to-text meeting notes with automatic timestamps.</p></div>
+        <div class="use-card"><div class="icon">👨‍👩‍👧‍👦</div><h3>Families</h3><p>Capture life's moments with proof of time and place.</p></div>
+        <div class="use-card"><div class="icon">⚖️</div><h3>Compliance</h3><p>Evidence-grade capture for records and compliance needs.</p></div>
+      </div>
+      <div style="text-align:center;margin-top:32px">
+        <a href="/uses/" class="btn btn-outline">View all 40+ use cases</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVACY -->
+  <section class="privacy-highlight" id="privacy">
+    <div class="container">
+      <div class="privacy-ring">
+        <img src="https://preserver.me/wp-content/uploads/2024/01/cropped-icon-192x192.png" alt="Preserver" width="64" height="64" style="border-radius:12px;margin:0 auto 8px" loading="lazy">
+      </div>
+      <h2>Your Data. Your Rules.</h2>
+      <p>Preserver is designed around one principle: nothing leaves your device unless you decide to share it. No data brokerage. No AI training on your captures. No surveillance.</p>
+      <div class="pill-list">
+        <span>No Account Required</span><span>No Data Sold</span><span>No Tracking</span>
+        <span>No Subscription</span><span>No Data Training</span><span>Your Cloud or Local</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ PREVIEW -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section__eyebrow">FAQ</div>
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item open"><div class="faq-q">How does Preserver pricing work?</div><div class="faq-a">Preserver is a one-time purchase of $49 USD. No subscription, no in-app purchases, no add-ons — ever. Pay once and use it forever, on as many of your own devices as you like.</div></div>
+        <div class="faq-item"><div class="faq-q">Does it work without an internet connection?</div><div class="faq-a">Absolutely. Preserver works completely offline — no Wi-Fi, Bluetooth, or mobile data required. Your captures are stored on your device until you choose to back them up or share them.</div></div>
+        <div class="faq-item"><div class="faq-q">Where is my data stored?</div><div class="faq-a">On your device, by default. If you choose, you can store your Activities in your personal cloud account (Google Drive, iCloud, Dropbox, etc.). You're always in control.</div></div>
+        <div class="faq-item"><div class="faq-q">Do you share my data with third parties?</div><div class="faq-a">Never. Preserver does not sell, share, or use your data for AI training. No data is accessible to anyone but you.</div></div>
+      </div>
+      <div style="text-align:center;margin-top:32px">
+        <a href="/faq/" class="btn btn-outline">See all questions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Start Capturing Today</h2>
+      <p>One-time purchase. No subscription. No signal needed.</p>
+      <div class="badge-row" style="justify-content:center">
+        <a href="https://apps.apple.com/au/app/preserver/id6443649784?utm_source=preserver.me&utm_medium=website&utm_campaign=cta" aria-label="Download on the App Store" target="_blank" rel="noopener">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" style="height:50px">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=au.com.observerapp.observer&utm_source=preserver.me&utm_medium=website&utm_campaign=cta" aria-label="Get it on Google Play" target="_blank" rel="noopener">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" style="height:50px">
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+<script src="/assets/preserver-shared.js?v=10"></script>
+</body>
+</html>
