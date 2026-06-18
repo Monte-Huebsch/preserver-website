@@ -39,7 +39,6 @@ var NAV = '<header><nav class="nav" aria-label="Main navigation"><div class="con
     '<a href="/">Home</a>'+
     '<a href="/uses/">Use cases</a>'+
     '<a href="/faq/">FAQ</a>'+
-    '<a href="/ai/">AI features</a>'+
     '<a href="/blog/">Blog</a>'+
     '<a href="/white-labeling/">White-label</a>'+
     '<a href="/contactus/" class="btn btn-outline" style="padding:8px 20px;font-size:14px">Feedback</a>'+
@@ -49,7 +48,7 @@ var NAV = '<header><nav class="nav" aria-label="Main navigation"><div class="con
 '</div></div>'+
 '<div class="nav__mobile container" id="mobileMenu">'+
   '<a href="/">Home</a><a href="/uses/">Use cases</a><a href="/faq/">FAQ</a>'+
-  '<a href="/ai/">AI features</a><a href="/blog/">Blog</a>'+
+  '<a href="/blog/">Blog</a>'+
   '<a href="/white-labeling/">White-label</a><a href="/contactus/">Feedback</a>'+
   '<a href="/#download" class="btn btn-primary" style="display:inline-flex;margin:8px 0 4px">Download free</a>'+
 '</div>'+
@@ -81,13 +80,12 @@ var FOOTER = '<footer class="footer" aria-label="Site footer"><div class="contai
       '<li><a href="/#features">Features</a></li>'+
       '<li><a href="/uses/">Use cases</a></li>'+
       '<li><a href="/faq/">FAQ</a></li>'+
-      '<li><a href="/ai/">AI features</a></li>'+
       '<li><a href="/white-labeling/">White-label</a></li>'+
     '</ul></div>'+
     '<div class="footer-links"><h4>Company</h4><ul>'+
       '<li><a href="/blog/">Blog</a></li>'+
       '<li><a href="/contactus/">Feedback</a></li>'+
-      '<li><a href="https://maps.app.goo.gl/RtRWbcsLNZ7x64us6" target="_blank" rel="noopener">Sunshine Coast QLD</a></li>'+
+      '<li><a href="https://www.google.com/maps/search/?api=1&amp;query=Preserver+Brisbane+Australia" target="_blank" rel="noopener">Brisbane Australia</a></li>'+
     '</ul></div>'+
     '<div class="footer-links"><h4>Legal</h4><ul>'+
       '<li><a href="/legals/privacy/" class="legal">Privacy policy</a></li>'+
@@ -95,8 +93,6 @@ var FOOTER = '<footer class="footer" aria-label="Site footer"><div class="contai
       '<li><a href="/legals/cookies/" class="legal">Cookie policy</a></li>'+
       '<li><a href="/legals/eula/" class="legal">EULA</a></li>'+
       '<li><a href="/legals/disclaimer/" class="legal">Disclaimer</a></li>'+
-      '<li><a href="/legals/dsar/" class="legal">DSAR form</a></li>'+
-      '<li><a href="/legals/scopes/" class="legal">Data scopes</a></li>'+
     '</ul></div>'+
   '</div>'+
   '<div class="footer-legal">'+
@@ -105,7 +101,6 @@ var FOOTER = '<footer class="footer" aria-label="Site footer"><div class="contai
     '<a href="/legals/terms/">Terms &amp; Conditions</a><span class="sep">|</span>'+
     '<a href="/legals/disclaimer/">Disclaimer</a><span class="sep">|</span>'+
     '<a href="/legals/eula/">EULA</a><span class="sep">|</span>'+
-    '<a href="/legals/dsar/">DSAR</a><span class="sep">|</span>'+
     '<a href="https://app.termly.io/notify/ffaca08d-90b2-4b26-aea2-17f957d53ae4" target="_blank" rel="noopener">Do Not Sell or Share My Personal Information</a><span class="sep">|</span>'+
     '<a href="https://app.termly.io/notify/ffaca08d-90b2-4b26-aea2-17f957d53ae4" target="_blank" rel="noopener">Limit the Use of My Sensitive Personal Information</a><span class="sep">|</span>'+
     '<a href="/sitemap.xml">Sitemap</a>'+
