@@ -13,7 +13,7 @@ function ring(sz) {
     var ox2=cx+ro*Math.sin(a2),oy2=cy-ro*Math.cos(a2);
     var ix1=cx+ri*Math.sin(a2),iy1=cy-ri*Math.cos(a2);
     var ix2=cx+ri*Math.sin(a1),iy2=cy-ri*Math.cos(a1);
-    return '<path d="M'+ox1.toFixed(2)+' '+oy1.toFixed(2)+' A'+ro.toFixed(2)+' '+ro.toFixed(2)+ 0 0 1 '+ox2.toFixed(2)+' '+oy2.toFixed(2)+' L'+ix1.toFixed(2)+' '+iy1.toFixed(2)+' A'+ri.toFixed(2)+' '+ri.toFixed(2)+' 0 0 0 '+ix2.toFixed(2)+' '+iy2.toFixed(2)+' Z" fill="'+red+'"/>';
+    return '<path d="M'+ox1.toFixed(2)+' '+oy1.toFixed(2)+' A'+ro.toFixed(2)+' '+ro.toFixed(2)+' 0 0 1 '+ox2.toFixed(2)+' '+oy2.toFixed(2)+' L'+ix1.toFixed(2)+' '+iy1.toFixed(2)+' A'+ri.toFixed(2)+' '+ri.toFixed(2)+' 0 0 0 '+ix2.toFixed(2)+' '+iy2.toFixed(2)+' Z" fill="'+red+'"/>';
   }
   function wseg(a1,a2){
     var lg=(a2-a1>Math.PI)?1:0;
@@ -42,7 +42,7 @@ var NAV = '<header><nav class="nav" aria-label="Main navigation"><div class="con
     '<a href="/blog/">Blog</a>'+
     '<a href="/white-labeling/">White-label</a>'+
     '<a href="/contactus/" class="btn btn-outline" style="padding:8px 20px;font-size:14px">Feedback</a>'+
-    '<a href="/#download" class="btn btn-primary" style="padding:8px 20px;font-size:14px">$49 — perpetual licence. No subscription!/a>'+
+    '<a href="/#download" class="btn btn-primary" style="padding:8px 20px;font-size:14px">$49 — perpetual licence. No subscription!</a>'+
   '</div>'+
   '<button class="nav__hamburger" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle menu">☰</button>'+
 '</div></div>'+
@@ -50,7 +50,7 @@ var NAV = '<header><nav class="nav" aria-label="Main navigation"><div class="con
   '<a href="/">Home</a><a href="/uses/">Use cases</a><a href="/faq/">FAQ</a>'+
   '<a href="/blog/">Blog</a>'+
   '<a href="/white-labeling/">White-label</a><a href="/contactus/">Feedback</a>'+
-  '<a href="/#download" class="btn btn-primary" style="display:inline-flex;margin:8px 0 4px">$49 — perpetual licence. No subscription!/a>'+
+  '<a href="/#download" class="btn btn-primary" style="display:inline-flex;margin:8px 0 4px">$49 — perpetual licence. No subscription!</a>'+
 '</div>'+
 '</nav></header>';
 
@@ -61,7 +61,7 @@ var FOOTER = '<footer class="footer" aria-label="Site footer"><div class="contai
       '<div class="footer-brand__logo">'+ring(32)+' Preserver</div>'+
       '<p>Record your life\'s events, hobbies and work with text, audio, photos and video. Location-stamped. Private. Truly free.</p>'+
       '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">'+
-        '<a href="https://www.facebook.com/Preserver.me/" target="_blank" rel="noopener" aria-lbel="Facebook" style="color:#999">Facebook</a>'+
+        '<a href="https://www.facebook.com/Preserver.me/" target="_blank" rel="noopener" aria-label="Facebook" style="color:#999">Facebook</a>'+
         '<span style="color:#444">·</span>'+
         '<a href="https://x.com/Preserver_app" target="_blank" rel="noopener" aria-label="X/Twitter" style="color:#999">X</a>'+
         '<span style="color:#444">·</span>'+
@@ -95,7 +95,7 @@ var FOOTER = '<footer class="footer" aria-label="Site footer"><div class="contai
       '<li><a href="/legals/disclaimer/" class="legal">Disclaimer</a></li>'+
     '</ul></div>'+
   '</div>'+
-  '<div class="footer-legal">'
+  '<div class="footer-legal">'+
     '<a href="/legals/privacy/">Privacy Policy</a><span class="sep">|</span>'+
     '<a href="/legals/cookies/">Cookie Policy</a><span class="sep">|</span>'+
     '<a href="/legals/terms/">Terms &amp; Conditions</a><span class="sep">|</span>'+
