@@ -1,5 +1,7 @@
-/* ── Google Analytics GA4 ── */
-(function(){
+/* ── Google Analytics GA4 (consent-aware) ── */
+function loadGA4(){
+  if (window._ga4Loaded) return;
+  window._ga4Loaded = true;
   var s = document.createElement('script');
   s.async = true;
   s.src = 'https://www.googletagmanager.com/gtag/js?id=G-GEKDCSFJJM';
@@ -9,7 +11,9 @@
   window.gtag = gtag;
   gtag('js', new Date());
   gtag('config', 'G-GEKDCSFJJM');
-})();
+}
+/* Fire immediately if user already accepted cookies */
+if (localStorage.getItem('preserver_cookie_consent') === 'accepted') { loadGA4(); }
 
 /* preserver-shared.js — nav, footer, cookie banner injected on every page */
 /* Brand: #FF4500 accent, #1a1a1a dark, system-ui font stack */
@@ -161,7 +165,7 @@ document.querySelectorAll('.nav__links a, .nav__mobile a').forEach(function(a){
 var banner = document.getElementById('cookieBanner');
 var KEY = 'preserver_cookie_consent';
 if (localStorage.getItem(KEY)) banner.classList.add('is-hidden');
-document.getElementById('cookieAccept').addEventListener('click', function(){ localStorage.setItem(KEY,'accepted'); banner.classList.add('is-hidden'); });
+document.getElementById('cookieAccept').addEventListener('click', function(){ localStorage.setItem(KEY,'accepted'); banner.classList.add('is-hidden'); loadGA4(); });
 document.getElementById('cookieDecline').addEventListener('click', function(){ localStorage.setItem(KEY,'declined'); banner.classList.add('is-hidden'); });
 
 /* ── FAQ / Accordion ── */
