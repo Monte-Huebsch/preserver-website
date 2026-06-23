@@ -1,3 +1,16 @@
+/* ── Google Analytics GA4 ── */
+(function(){
+  var s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-GEKDCSFJJM';
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  window.gtag = gtag;
+  gtag('js', new Date());
+  gtag('config', 'G-GEKDCSFJJM');
+})();
+
 /* preserver-shared.js — nav, footer, cookie banner injected on every page */
 /* Brand: #FF4500 accent, #1a1a1a dark, system-ui font stack */
 (function(){
@@ -163,3 +176,4 @@ document.querySelectorAll('.faq-q, .accordion__btn').forEach(function(btn){
 });
 
 })();
+
