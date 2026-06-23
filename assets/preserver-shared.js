@@ -1,4 +1,6 @@
-/* ── Google Analytics GA4 (consent-aware) ── */
+/* ── Analytics (all three) ── */
+
+/* GA4 — consent-aware: only fires after cookie accept */
 function loadGA4(){
   if (window._ga4Loaded) return;
   window._ga4Loaded = true;
@@ -14,6 +16,22 @@ function loadGA4(){
 }
 /* Fire immediately if user already accepted cookies */
 if (localStorage.getItem('preserver_cookie_consent') === 'accepted') { loadGA4(); }
+
+/* Microsoft Clarity — fires immediately (no PII, cookieless-compatible) */
+(function(c,l,a,r,i,t,y){
+  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+})(window, document, "clarity", "script", "x5mp720fnd");
+
+/* Cloudflare Web Analytics — fires immediately (privacy-first, no cookies) */
+(function(){
+  var s = document.createElement('script');
+  s.defer = true;
+  s.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+  s.setAttribute('data-cf-beacon', '{"token": "331e49e95afc4a8d96dda36e2a36bfb5"}');
+  document.head.appendChild(s);
+})();
 
 /* preserver-shared.js — nav, footer, cookie banner injected on every page */
 /* Brand: #FF4500 accent, #1a1a1a dark, system-ui font stack */
