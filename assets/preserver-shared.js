@@ -15,7 +15,23 @@ function loadGA4(){
   gtag('config', 'G-GEKDCSFJJM');
 }
 /* Fire immediately if user already accepted cookies */
-if (localStorage.getItem('preserver_cookie_consent') === 'accepted') { loadGA4(); }
+if (localStorage.getItem('preserver_cookie_consent') === 'accepted') { loadGA4(); loadMetaPixel(); }
+
+/* Meta Pixel — consent-aware: only fires after cookie accept */
+function loadMetaPixel(){
+  if (window._metaPixelLoaded) return;
+  window._metaPixelLoaded = true;
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init','854876167371717');
+  fbq('track','PageView');
+}
 
 /* Microsoft Clarity — fires immediately (no PII, cookieless-compatible) */
 (function(c,l,a,r,i,t,y){
@@ -183,7 +199,7 @@ document.querySelectorAll('.nav__links a, .nav__mobile a').forEach(function(a){
 var banner = document.getElementById('cookieBanner');
 var KEY = 'preserver_cookie_consent';
 if (localStorage.getItem(KEY)) banner.classList.add('is-hidden');
-document.getElementById('cookieAccept').addEventListener('click', function(){ localStorage.setItem(KEY,'accepted'); banner.classList.add('is-hidden'); loadGA4(); });
+document.getElementById('cookieAccept').addEventListener('click', function(){ localStorage.setItem(KEY,'accepted'); banner.classList.add('is-hidden'); loadGA4(); loadMetaPixel(); });
 document.getElementById('cookieDecline').addEventListener('click', function(){ localStorage.setItem(KEY,'declined'); banner.classList.add('is-hidden'); });
 
 /* ── FAQ / Accordion ── */
