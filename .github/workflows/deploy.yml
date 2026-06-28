@@ -26,4 +26,4 @@ jobs:
         run: wrangler pages deploy . --project-name=preserver-me --branch=main
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: 55295db301c910a208a696465ddbea81
+          CLOUDFLARE_ACCOUNT_ID: 74fb136f472fe07d29ccea9db9738a5f
