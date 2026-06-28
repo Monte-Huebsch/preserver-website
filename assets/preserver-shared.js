@@ -14,9 +14,6 @@ function loadGA4(){
   gtag('js', new Date());
   gtag('config', 'G-GEKDCSFJJM');
 }
-/* Fire immediately if user already accepted cookies */
-if (localStorage.getItem('preserver_cookie_consent') === 'accepted') { loadGA4(); loadMetaPixel(); }
-
 /* Meta Pixel — consent-aware: only fires after cookie accept */
 function loadMetaPixel(){
   if (window._metaPixelLoaded) return;
@@ -32,6 +29,8 @@ function loadMetaPixel(){
   fbq('init','854876167371717');
   fbq('track','PageView');
 }
+/* Fire immediately if user already accepted cookies */
+if (localStorage.getItem('preserver_cookie_consent') === 'accepted') { loadGA4(); loadMetaPixel(); }
 
 /* Microsoft Clarity — fires immediately (no PII, cookieless-compatible) */
 (function(c,l,a,r,i,t,y){
