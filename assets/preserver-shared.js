@@ -28,6 +28,24 @@ function loadMetaPixel(){
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init','854876167371717');
   fbq('track','PageView');
+
+  /* ── Meta Pixel: App Store / Google Play click tracking ── */
+  document.querySelectorAll('a[href*="apps.apple.com"]').forEach(function(el){
+    el.addEventListener('click', function(){
+      fbq('track', 'Lead', {
+        content_name: 'App Store Click',
+        content_category: 'iOS'
+      });
+    });
+  });
+  document.querySelectorAll('a[href*="play.google.com"]').forEach(function(el){
+    el.addEventListener('click', function(){
+      fbq('track', 'Lead', {
+        content_name: 'Google Play Click',
+        content_category: 'Android'
+      });
+    });
+  });
 }
 /* Fire immediately if user already accepted cookies */
 if (localStorage.getItem('preserver_cookie_consent') === 'accepted') { loadGA4(); loadMetaPixel(); }
@@ -213,4 +231,3 @@ document.querySelectorAll('.faq-q, .accordion__btn').forEach(function(btn){
 });
 
 })();
-
