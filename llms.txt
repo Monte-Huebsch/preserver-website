@@ -29,7 +29,7 @@ Preserver is used across 70+ industries wherever timestamped, GPS-verified recor
 - **Price:** $49 USD one-time purchase (perpetual licence)
 - **Privacy:** No account required. No data sold. Captures stored on-device only.
 - **App Store:** https://apps.apple.com/au/app/preserver/id6443649784
-- **Google Play:** https://play.google.com/store/apps/details?id=au.com.observerapp.observer
+- **Google Play:** https://play.google.com/store/apps/details?id=au.com.preserverapp.preserver&hl=en
 - **Contact:** https://preserver.me/contactus/
 
 ## Legal

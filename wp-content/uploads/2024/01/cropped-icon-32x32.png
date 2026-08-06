@@ -52,7 +52,7 @@
     "image": "https://preserver.me/assets/og-image.png",
     "downloadUrl": [
       "https://apps.apple.com/au/app/preserver/id6443649784",
-      "https://play.google.com/store/apps/details?id=au.com.observerapp.observer"
+      "https://play.google.com/store/apps/details?id=au.com.preserverapp.preserver&hl=en"
     ],
     "screenshot": "https://preserver.me/assets/og-image.png",
     "featureList": "GPS timestamping, Offline capture, Voice recording, Photo capture, Video capture, No account required, Private data storage, Perpetual licence"
@@ -125,7 +125,7 @@
     },
     "downloadUrl": [
       "https://apps.apple.com/au/app/preserver/id6443649784",
-      "https://play.google.com/store/apps/details?id=au.com.observerapp.observer"
+      "https://play.google.com/store/apps/details?id=au.com.preserverapp.preserver&hl=en"
     ],
     "url": "https://preserver.me",
     "image": "https://preserver.me/assets/og-image.png"
@@ -185,7 +185,7 @@
         <a href="https://apps.apple.com/au/app/preserver/id6443649784?utm_source=preserver.me&utm_medium=website&utm_campaign=hero" aria-label="Download on the App Store" target="_blank" rel="noopener">
           <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" style="height:50px">
         </a>
-        <a href="https://play.google.com/store/apps/details?id=au.com.observerapp.observer&utm_source=preserver.me&utm_medium=website&utm_campaign=hero" aria-label="Get it on Google Play" target="_blank" rel="noopener">
+        <a href="https://play.google.com/store/apps/details?id=au.com.preserverapp.preserver&hl=en&utm_source=preserver.me&utm_medium=website&utm_campaign=hero" aria-label="Get it on Google Play" target="_blank" rel="noopener">
           <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" style="height:50px">
         </a>
       </div>
@@ -310,7 +310,7 @@
         <a href="https://apps.apple.com/au/app/preserver/id6443649784?utm_source=preserver.me&utm_medium=website&utm_campaign=cta" aria-label="Download on the App Store" target="_blank" rel="noopener">
           <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" style="height:50px">
         </a>
-        <a href="https://play.google.com/store/apps/details?id=au.com.observerapp.observer&utm_source=preserver.me&utm_medium=website&utm_campaign=cta" aria-label="Get it on Google Play" target="_blank" rel="noopener">
+        <a href="https://play.google.com/store/apps/details?id=au.com.preserverapp.preserver&hl=en&utm_source=preserver.me&utm_medium=website&utm_campaign=cta" aria-label="Get it on Google Play" target="_blank" rel="noopener">
           <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" style="height:50px">
         </a>
       </div>

@@ -5,7 +5,7 @@
 **App:** Preserver — professional GPS timestamped capture app for iOS and Android
 **Website:** https://preserver.me
 **App Store:** https://apps.apple.com/au/app/preserver/id6443649784
-**Google Play:** https://play.google.com/store/apps/details?id=au.com.observerapp.observer
+**Google Play:** https://play.google.com/store/apps/details?id=au.com.preserverapp.preserver&hl=en
 **AU Address:** Brisbane, Australia
 **US Address:** Preserver LLC, Sunnyvale, California, USA
 **Rating:** 4.9 stars on Google Play
