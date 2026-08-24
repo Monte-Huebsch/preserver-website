@@ -110,7 +110,6 @@ var NAV = '<header><nav class="nav" aria-label="Main navigation"><div class="con
     '<a href="/blog/">Blog</a>'+
     '<a href="/white-labeling/">White-label</a>'+
     '<a href="/contactus/" class="btn btn-outline" style="padding:8px 20px;font-size:14px">Feedback</a>'+
-    '<a href="/#download" class="btn btn-primary" style="padding:8px 20px;font-size:14px">Get Preserver — Free</a>'+
   '</div>'+
   '<button class="nav__hamburger" id="navToggle" aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle menu">☰</button>'+
 '</div></div>'+
@@ -118,7 +117,6 @@ var NAV = '<header><nav class="nav" aria-label="Main navigation"><div class="con
   '<a href="/">Home</a><a href="/uses/">Use cases</a><a href="/faq/">FAQ</a>'+
   '<a href="/blog/">Blog</a>'+
   '<a href="/white-labeling/">White-label</a><a href="/contactus/">Feedback</a>'+
-  '<a href="/#download" class="btn btn-primary" style="display:inline-flex;margin:8px 0 4px">Get Preserver — Free</a>'+
 '</div>'+
 '</nav></header>';
 
