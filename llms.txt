@@ -6,17 +6,16 @@ Preserver is used across 70+ industries wherever timestamped, GPS-verified recor
 
 ## Key pages
 
-- [Home](https://preserver.me/): Overview of Preserver — what it does, pricing, features and how to purchase.
+- [Home](https://preserver.me/): Overview of Preserver — what it does, features and how to download.
 - [Use Cases](https://preserver.me/uses/): 70+ industry use cases across Health & Care, Trades & Construction, Field & Remote Work, Legal & Compliance, Media & Research, Events & Hospitality, and Personal & Lifestyle.
 - [FAQ](https://preserver.me/faq/): Questions covering pricing, privacy, features, platforms, AI transcription and professional use.
-- [Blog](https://preserver.me/blog/): Articles on GPS metadata, field documentation, pricing, voice vs text capture, and AI transcription.
+- [Blog](https://preserver.me/blog/): Articles on GPS metadata, field documentation, voice vs text capture, and AI transcription.
 
 ## Blog articles
 
 - [Getting AI Summaries and Transcripts from Your Preserver Recordings](https://preserver.me/blog/ai-summaries/): How to turn a Preserver voice or video recording into a transcript or summary using your phone's built-in AI (Apple Intelligence, Gemini, Notes).
 - [Why GPS Metadata Matters More Than You Think](https://preserver.me/blog/gps-metadata/): How GPS coordinates are embedded in photos, why most apps strip them, and why keeping that metadata matters for evidence.
 - [How Tradespeople Use Timestamped Photos to Protect Themselves](https://preserver.me/blog/tradies/): Before/after job documentation for dispute resolution and insurance.
-- [Why We Chose One-Time Pricing](https://preserver.me/blog/ad-funded/): Why Preserver is a $49 USD one-time purchase with no subscription or ads.
 - [Field Research Without Wi-Fi: Preserver in Remote Australia](https://preserver.me/blog/offline-field/): Offline-first capture for researchers and field workers without mobile coverage.
 - [Voice Notes vs Typed Notes: When to Use Each](https://preserver.me/blog/voice-vs-text/): Practical guide to choosing the right capture type.
 
@@ -26,7 +25,7 @@ Preserver is used across 70+ industries wherever timestamped, GPS-verified recor
 - **Australian address:** Brisbane, Australia
 - **US address:** Preserver LLC, 1234 Cranberry Avenue, Sunnyvale, California 94087, USA
 - **Platforms:** iOS (App Store), Android (Google Play)
-- **Price:** $49 USD one-time purchase (perpetual licence)
+- **Price:** Free — no registration, no subscription, no upsells
 - **Privacy:** No account required. No data sold. Captures stored on-device only.
 - **App Store:** https://apps.apple.com/au/app/preserver/id6443649784
 - **Google Play:** https://play.google.com/store/apps/details?id=au.com.preserverapp.preserver&hl=en
