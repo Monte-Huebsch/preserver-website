@@ -1,14 +1,18 @@
 # Preserver
 
-> Preserver is a professional mobile app for iOS and Android that captures text, voice, photos and video — each automatically stamped with the exact time, date and GPS coordinates at the moment of capture. No account required. No signal needed. Data stays on your device.
+> Preserver is a mobile app for iOS and Android that captures real-world, ground-truth data — text, voice, photos and video, each automatically stamped with the exact time, date and GPS coordinates at the moment of capture — and exports it as structured, AI-ready bundles. No account required. No signal needed. Data stays on your device until you choose to export it.
 
-Preserver is used across 70+ industries wherever timestamped, GPS-verified records matter: trades and construction, healthcare, field research, legal and compliance, journalism, agriculture, and personal record-keeping. It works completely offline via satellite GPS.
+Preserver is used across 70+ industries wherever timestamped, GPS-verified records matter: trades and construction, healthcare, field research, legal and compliance, journalism, agriculture, and personal record-keeping. It works completely offline via satellite GPS. Captures can be exported as AI-ready bundles and uploaded to ChatGPT, Claude, Gemini, Grok, NotebookLM or custom data pipelines to generate reports, summaries, timelines and other content grounded in verified real-world observations.
+
+## AI-ready export bundles
+
+Each export bundle contains a machine-readable JSON manifest, voice-note transcripts (produced by on-device speech recognition), all photos and video, GPS coordinates, timestamps, and SHA-256 integrity hashes that prove nothing was altered after capture. The bundle format is open and readable by any AI assistant or pipeline that accepts file uploads. A typical workflow: capture observations in the field, export the activity bundle, upload it to an AI assistant, and ask for a site inspection report, incident summary, compliance record, case timeline or meeting minutes — grounded only in the captured data.
 
 ## Key pages
 
-- [Home](https://preserver.me/): Overview of Preserver — what it does, features and how to download.
+- [Home](https://preserver.me/): Overview of Preserver — what it does, features, the field-to-report AI workflow, and how to download.
 - [Use Cases](https://preserver.me/uses/): 70+ industry use cases across Health & Care, Trades & Construction, Field & Remote Work, Legal & Compliance, Media & Research, Events & Hospitality, and Personal & Lifestyle.
-- [FAQ](https://preserver.me/faq/): Questions covering pricing, privacy, features, platforms, AI transcription and professional use.
+- [FAQ](https://preserver.me/faq/): Questions covering pricing (free capture, beta exports, grandfathering), privacy, AI-ready export bundles, features, platforms and professional use.
 - [Blog](https://preserver.me/blog/): Articles on GPS metadata, field documentation, voice vs text capture, and AI transcription.
 
 ## Blog articles
@@ -25,8 +29,8 @@ Preserver is used across 70+ industries wherever timestamped, GPS-verified recor
 - **Australian address:** Brisbane, Australia
 - **US address:** Preserver LLC, 1234 Cranberry Avenue, Sunnyvale, California 94087, USA
 - **Platforms:** iOS (App Store), Android (Google Play)
-- **Price:** Free — no registration, no subscription, no upsells
-- **Privacy:** No account required. No data sold. Captures stored on-device only.
+- **Price:** Capture is free — no registration, unlimited captures. AI-ready export bundles are free during the beta, and beta users keep free access permanently (grandfathered). In future, new users will pay a small monthly charge for the Pro version.
+- **Privacy:** No account required. No data sold. No AI training on user captures. Captures stored on-device (or the user's own cloud) only; users choose which AI service, if any, receives an exported bundle.
 - **App Store:** https://apps.apple.com/au/app/preserver/id6443649784
 - **Google Play:** https://play.google.com/store/apps/details?id=au.com.preserverapp.preserver&hl=en
 - **Contact:** https://preserver.me/contactus/
