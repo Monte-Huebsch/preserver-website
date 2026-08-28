@@ -404,6 +404,7 @@ function openModal(title, icon, cat, desc, pointsStr, blogUrl, blogTitle) {
   var slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
   var video = document.getElementById('modal-video');
   video.pause();
+  video.poster = '/media/uses/' + slug + '-poster.jpg';
   video.src = '/media/uses/' + slug + '-video.mp4';
   document.getElementById('modal-pdf-link').href = '/media/uses/' + slug + '-carousel.pdf';
   var blogEl = document.getElementById('modal-blog');
