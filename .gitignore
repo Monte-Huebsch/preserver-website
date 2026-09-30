@@ -15,3 +15,5 @@ Thumbs.db
 node_modules/
 dist/
 .wrangler/
+__pycache__/
+*.pyc

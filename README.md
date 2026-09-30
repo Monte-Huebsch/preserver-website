@@ -11,6 +11,9 @@ This repository is the static source for [preserver.me](https://preserver.me), t
 - `legals/` — privacy, terms, cookies, EULA, disclaimer.
 - `white-labeling/` — the white label / enterprise page.
 - `ai/` — placeholder page (currently a stub redirect to the homepage; not yet built out).
+- `functions/api/chat.js` — the site chatbot's live endpoint (Cloudflare Pages Function).
+- `tools/chatbot/` — the chatbot's content pipeline (extraction + embedding scripts). **See `tools/chatbot/README.md` — re-run after any content change, or the chatbot answers from stale content.**
+- `wrangler.toml` — Vectorize + Workers AI bindings for the chatbot, picked up automatically by the existing deploy workflow.
 - `media/uses/` — sales collateral: a PDF carousel and a short demo video for each of ~70 industry verticals. This is a sizeable binary folder (~170MB) — be mindful of that if you fork or clone frequently on a slow connection.
 - `wp-content/uploads/2024/01/` — legacy favicon paths kept for compatibility with existing `<link rel="icon">` references.
 

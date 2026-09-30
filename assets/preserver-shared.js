@@ -241,4 +241,121 @@ document.querySelectorAll('.faq-q, .accordion__btn').forEach(function(btn){
   });
 });
 
+/* ── Site chatbot (self-hosted RAG, replaces the old Dante AI embed) ──
+   Talks to /api/chat (functions/api/chat.js), a Cloudflare Pages Function
+   backed by Workers AI + Vectorize, both in this same Cloudflare account —
+   no third-party vendor sees visitor conversations.
+   Knowledge base freshness is NOT automatic: see tools/chatbot/README.md —
+   after editing the homepage, FAQ, a use-case card or a blog post, re-run
+   extract_content.py + embed_and_upsert.py or the bot answers from stale
+   content. This widget itself needs no changes when content changes. */
+(function initChatWidget(){
+  var css = '' +
+    '#pv-chat-btn{position:fixed;bottom:20px;right:20px;width:56px;height:56px;border-radius:50%;' +
+    'background:#FF4500;color:#fff;border:none;box-shadow:0 4px 16px rgba(0,0,0,.25);cursor:pointer;' +
+    'font-size:24px;z-index:9998;display:flex;align-items:center;justify-content:center}' +
+    '#pv-chat-panel{position:fixed;bottom:88px;right:20px;width:340px;max-width:calc(100vw - 32px);' +
+    'height:460px;max-height:calc(100vh - 120px);background:#fff;border-radius:16px;' +
+    'box-shadow:0 12px 40px rgba(0,0,0,.22);display:none;flex-direction:column;overflow:hidden;z-index:9999;' +
+    'font-family:inherit}' +
+    '#pv-chat-panel.open{display:flex}' +
+    '#pv-chat-head{background:#1a1a1a;color:#fff;padding:14px 16px;font-weight:700;font-size:14px;' +
+    'display:flex;justify-content:space-between;align-items:center}' +
+    '#pv-chat-head button{background:none;border:none;color:#aaa;font-size:18px;cursor:pointer}' +
+    '#pv-chat-msgs{flex:1;overflow-y:auto;padding:14px;font-size:13px;line-height:1.5}' +
+    '.pv-msg{margin-bottom:12px;max-width:90%}' +
+    '.pv-msg.user{margin-left:auto;text-align:right}' +
+    '.pv-msg .bubble{display:inline-block;padding:9px 13px;border-radius:14px;text-align:left}' +
+    '.pv-msg.user .bubble{background:#FF4500;color:#fff;border-bottom-right-radius:4px}' +
+    '.pv-msg.bot .bubble{background:#f2f2f2;color:#222;border-bottom-left-radius:4px}' +
+    '.pv-msg .sources{margin-top:4px;font-size:11px}' +
+    '.pv-msg .sources a{color:#FF4500;text-decoration:none;margin-right:8px}' +
+    '#pv-chat-form{display:flex;border-top:1px solid #eee;padding:8px}' +
+    '#pv-chat-input{flex:1;border:none;outline:none;font-size:13px;padding:8px;font-family:inherit}' +
+    '#pv-chat-form button{background:#FF4500;color:#fff;border:none;border-radius:8px;padding:0 14px;' +
+    'font-weight:700;cursor:pointer}';
+  var style = document.createElement('style');
+  style.textContent = css;
+  document.head.appendChild(style);
+
+  var btn = document.createElement('button');
+  btn.id = 'pv-chat-btn';
+  btn.setAttribute('aria-label', 'Chat with Preserver Assistant');
+  btn.textContent = '💬';
+
+  var panel = document.createElement('div');
+  panel.id = 'pv-chat-panel';
+  panel.innerHTML =
+    '<div id="pv-chat-head"><span>Preserver Assistant</span><button id="pv-chat-close" aria-label="Close">✕</button></div>' +
+    '<div id="pv-chat-msgs"></div>' +
+    '<form id="pv-chat-form"><input id="pv-chat-input" type="text" placeholder="Ask about Preserver…" autocomplete="off"><button type="submit">Send</button></form>';
+
+  document.body.appendChild(btn);
+  document.body.appendChild(panel);
+
+  var msgsEl = panel.querySelector('#pv-chat-msgs');
+  var history = [];
+  var greeted = false;
+
+  function addMessage(role, text, sources){
+    var wrap = document.createElement('div');
+    wrap.className = 'pv-msg ' + role;
+    var bubble = document.createElement('div');
+    bubble.className = 'bubble';
+    bubble.textContent = text;
+    wrap.appendChild(bubble);
+    if (sources && sources.length){
+      var s = document.createElement('div');
+      s.className = 'sources';
+      sources.forEach(function(src){
+        var a = document.createElement('a');
+        a.href = src.url; a.textContent = (src.title || src.url).split(' — ')[0];
+        s.appendChild(a);
+      });
+      wrap.appendChild(s);
+    }
+    msgsEl.appendChild(wrap);
+    msgsEl.scrollTop = msgsEl.scrollHeight;
+  }
+
+  btn.addEventListener('click', function(){
+    panel.classList.toggle('open');
+    if (!greeted){
+      greeted = true;
+      addMessage('bot', "Hi! I'm the Preserver Assistant. Ask me anything about how the app works, pricing, privacy, or whether it fits your use case.");
+    }
+  });
+  panel.querySelector('#pv-chat-close').addEventListener('click', function(){ panel.classList.remove('open'); });
+
+  panel.querySelector('#pv-chat-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    var input = panel.querySelector('#pv-chat-input');
+    var text = input.value.trim();
+    if (!text) return;
+    input.value = '';
+    addMessage('user', text);
+    history.push({ role: 'user', content: text });
+
+    var thinking = document.createElement('div');
+    thinking.className = 'pv-msg bot';
+    thinking.innerHTML = '<div class="bubble">…</div>';
+    msgsEl.appendChild(thinking);
+    msgsEl.scrollTop = msgsEl.scrollHeight;
+
+    fetch('/api/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: text, history: history.slice(-6) })
+    }).then(function(r){ return r.json(); }).then(function(data){
+      thinking.remove();
+      var reply = data.reply || "Sorry, something went wrong — try preserver.me/faq/ or the contact page.";
+      addMessage('bot', reply, data.sources);
+      history.push({ role: 'assistant', content: reply });
+    }).catch(function(){
+      thinking.remove();
+      addMessage('bot', "I'm having trouble connecting right now — try preserver.me/faq/ or get in touch via the contact page.");
+    });
+  });
+})();
+
 })();
