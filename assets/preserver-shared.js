@@ -29,12 +29,21 @@ function loadMetaPixel(){
   fbq('init','854876167371717');
   fbq('track','PageView');
 
-  /* ── Meta Pixel: App Store / Google Play click tracking ── */
+  /* ── Meta Pixel + GA4: App Store / Google Play click tracking ── */
+  /* Explicit code-owned GA4 events (app_store_click / play_store_click) —
+     previously GA4's only signal for this was its own automatic Enhanced
+     Measurement outbound-click detection plus an unverifiable admin-console
+     key-event rule; these calls fire a named event directly so it can be
+     checked/reported on without depending on that config. */
   document.querySelectorAll('a[href*="apps.apple.com"]').forEach(function(el){
     el.addEventListener('click', function(){
       fbq('track', 'Lead', {
         content_name: 'App Store Click',
         content_category: 'iOS'
+      });
+      if (window.gtag) gtag('event', 'app_store_click', {
+        event_category: 'engagement',
+        event_label: window.location.pathname
       });
     });
   });
@@ -43,6 +52,10 @@ function loadMetaPixel(){
       fbq('track', 'Lead', {
         content_name: 'Google Play Click',
         content_category: 'Android'
+      });
+      if (window.gtag) gtag('event', 'play_store_click', {
+        event_category: 'engagement',
+        event_label: window.location.pathname
       });
     });
   });
