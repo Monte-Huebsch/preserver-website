@@ -81,6 +81,22 @@ a { color: inherit; text-decoration: none; }
 .prop-card h3 { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
 .prop-card p  { font-size: 15px; color: #666; max-width: 300px; margin: 0 auto; }
 
+/* ── Comparison table ── */
+.compare-intro { font-size: 17px; color: #555; line-height: 1.7; max-width: 720px; margin: 0 auto 40px; text-align: center; }
+.compare-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 14px; box-shadow: 0 4px 24px rgba(0,0,0,.06); }
+.compare-table { width: 100%; min-width: 760px; border-collapse: collapse; background: #fff; }
+.compare-table th, .compare-table td { padding: 16px 14px; text-align: center; border-bottom: 1px solid #eee; font-size: 14px; color: #555; }
+.compare-table thead th { font-size: 13px; font-weight: 700; color: #333; padding-top: 20px; padding-bottom: 20px; white-space: nowrap; }
+.compare-table td:first-child, .compare-table th:first-child { text-align: left; font-weight: 600; color: #333; padding-left: 22px; min-width: 220px; }
+.compare-table tbody tr:last-child td { border-bottom: none; }
+.compare-table .compare-col--us { background: #FFF3EE; }
+.compare-table th.compare-col--us { color: #FF4500; font-size: 15px; }
+.compare-yes { color: #1a9c53; font-weight: 700; font-size: 16px; }
+.compare-no { color: #ccc; font-size: 16px; }
+.compare-partial { color: #c98a00; font-weight: 600; font-size: 13px; }
+.compare-price { font-weight: 600; color: #333; font-size: 13px; }
+.compare-note { font-size: 13px; color: #999; margin-top: 18px; text-align: center; max-width: 640px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+
 /* ── Steps (how it works) ── */
 .steps { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 32px; counter-reset: step; }
 .step { text-align: center; padding: 24px 16px; }
