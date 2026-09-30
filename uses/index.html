@@ -83,7 +83,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .modal-blog span { font-size: 13px; color: #1a1a1a; font-weight: 600; }
     .modal-blog a { font-size: 13px; font-weight: 700; color: #FF4500; text-decoration: none; white-space: nowrap; }
     .modal-blog a:hover { text-decoration: underline; }
-    .modal-cta { display: flex; gap: 10px; }
+    .modal-cta { display: flex; gap: 10px; position: sticky; bottom: 0; background: #fff; padding: 14px 24px calc(14px + env(safe-area-inset-bottom)); border-top: 1px solid #eee; border-radius: 0 0 16px 16px; box-shadow: 0 -6px 16px rgba(0,0,0,.06); z-index: 5; }
     .modal-cta a { flex: 1; text-align: center; font-size: 13px; font-weight: 600; padding: 10px; border-radius: 10px; border: 1.5px solid #e8e8e8; color: #1a1a1a; text-decoration: none; transition: background .15s; }
     .modal-cta a:hover { background: #f8f8f8; }
     .modal-cta a.primary { background: #FF4500; color: #fff; border-color: #FF4500; }
@@ -1482,10 +1482,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span>📖 Full article on this use case</span>
         <a id="modal-blog-link" href="#">Read article →</a>
       </div>
-      <div class="modal-cta">
-        <a href="https://apps.apple.com/au/app/preserver/id6443649784" target="_blank" rel="noopener">App Store</a>
-        <a href="https://play.google.com/store/apps/details?id=au.com.preserverapp.preserver&hl=en" target="_blank" rel="noopener">Google Play</a>
-      </div>
+    </div>
+    <div class="modal-cta">
+      <a href="https://apps.apple.com/au/app/preserver/id6443649784" target="_blank" rel="noopener">App Store</a>
+      <a href="https://play.google.com/store/apps/details?id=au.com.preserverapp.preserver&hl=en" target="_blank" rel="noopener">Google Play</a>
     </div>
   </div>
 </div>
