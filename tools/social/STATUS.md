@@ -70,13 +70,20 @@ history — not removed (out of scope of this rollout; flag if Monte wants them 
   - Avatar → new orange icon
   - Bio → "Capture real-world proof. AI-ready exports. Free to capture, in beta 🚀"
 
-## Daily/rotating distribution — account IDs to use
+## Daily/rotating distribution — DONE (2026-10-01)
 
-Once Monte confirms he's happy with the pivot above, the QT-series daily distribution
-should use:
+Monte confirmed he's happy with the Instagram/Threads changes above. All 73 already-
+scheduled QT-series posts (through 2026-10-25) were updated via `update_post`:
 
-- LinkedIn 5284, YouTube 5285, X 5286, TikTok 5287, Facebook 5288, **Instagram 9904**
-  (not 5289), **Threads 9903**
+- `account_ids`: old Instagram 5289 swapped for **9904** (monte344), **9903** (Threads)
+  added — now LinkedIn 5284, YouTube 5285, X 5286, TikTok 5287, Facebook 5288,
+  Instagram 9904, Threads 9903 on every post.
+- Added a `platform_content.threads` override to each post with the same UTM
+  convention as the other platforms (`utm_source=threads&utm_medium=social&utm_campaign=qt-video-series&utm_content={slug}`).
+  Confirmed this merges into the existing per-platform overrides rather than
+  replacing them.
+- Verified via `list_posts_advanced`: 0 scheduled posts remain on account 5289; all 73
+  now include account 9903.
 
 ## Other flagged, not yet approved
 
